@@ -9,6 +9,8 @@
     --camera: #6944E6;
     --deal: #DE3B62;
     --secondary-text: #8D979E;
+    --pre-order: #F8BA26;
+    --bg-bold: #F1F3F7;
     --base-font-size: 16px;
     --base-font-weight: 400;
     --base-font-header: 14px;
@@ -67,6 +69,14 @@ button {
 
 .color-black {
     color: var(--blakc);
+}
+
+.back-ground-blue {
+    background-color: var(--search-button);
+}
+
+.back-ground-orange {
+    background-color: var(--pre-order);
 }
 
 ul {

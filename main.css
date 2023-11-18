@@ -172,7 +172,8 @@
     color: var(--secondary-text);
 }
 
-.top-deal-text {
+.top-deal-text,
+.top-selling-text {
     padding: 0 1rem;
 }
 
@@ -184,6 +185,15 @@
     width: 50%;
     padding: 0 1rem;
     flex: 1 0 auto;
+}
+
+.card-wrapper:hover {
+    .icon-block {
+        transform: translateX(0);
+        opacity: 1;
+        visibility: visible;
+        transition: all .6s ease;
+    }
 }
 
 .card {
@@ -206,8 +216,103 @@
 }
 
 .icon-block-item {
+    cursor: pointer;
     padding: 1rem;
     margin-bottom: .5rem;
     border-radius: 50%;
     background-color: #F1F3F7;
+}
+
+.icon-block-item:hover {
+    background-color: var(--search-button);
+
+    & svg {
+        background-color: var(--search-button);
+
+        & path {
+            fill: var(--whrite);
+        }
+    }
+}
+
+.icon-block-item svg {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.sale-block {
+    left: 5%;
+    top: 0;
+    color: var(--whrite);
+}
+
+.sale-block-item {
+    padding: .3rem .8rem;
+    border-radius: 3rem;
+    width: fit-content;
+    font-size: 1.2rem;
+}
+
+.pre-order {
+    margin-top: .3rem;
+}
+
+.top-selling-wrapper {
+    background-color: var(--bg-bold);
+    margin-left: -1.5rem;
+    margin-right: -1.5rem;
+}
+
+.top-selling {
+    padding: 5rem 1.5rem;
+    margin-left: -1rem;
+    margin-right: -1rem;
+}
+
+.top-selling-list {
+    padding: 0 1rem;
+}
+
+.top-selling-image {
+    padding: 1rem;
+}
+
+.top-selling-card-body {
+    padding: 0 1rem;
+    margin-left: -1rem;
+}
+
+.top-selling-list .carousel-item {
+    max-height: 43rem;
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.top-selling-list {
+
+    .carousel-control-prev,
+    .carousel-control-next {
+        top: 37%;
+        bottom: 63%;
+    }
+
+    .carousel-control-prev {
+        left: -3%;
+    }
+
+    .carousel-control-next {
+        right: -3%;
+    }
+
+}
+
+@media only screen and (min-width: 1200px) {
+
+    .icon-block {
+        transform: translateX(500%);
+        opacity: 0;
+        visibility: hidden;
+        transition: all .6s ease;
+    }
+
 }
