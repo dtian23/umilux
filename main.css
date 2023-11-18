@@ -1,0 +1,167 @@
+.container-main {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 1.5rem;
+}
+
+.main-body {
+    padding-top: 4rem;
+}
+
+.shop- {
+    justify-content: end;
+    padding: 0;
+    margin-bottom: 2rem;
+    border-radius: 1rem;
+}
+
+.shop-gamepad {
+    background-color: var(--console);
+}
+
+.shop-deal {
+    background-color: var(--deal);
+}
+
+.shop-camera {
+    background-color: var(--camera);
+}
+
+.banner-text {
+    color: var(--whrite);
+    left: 5%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.banner-text p {
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+.banner-image {
+    display: flex;
+    width: 55%;
+}
+
+.banner-image img {
+    flex: 1 1 auto;
+    width: 100%;
+    min-height: 15rem;
+}
+
+.banner-title a {
+    font-size: 1.2rem;
+}
+
+.banner-title span {
+    display: inline-block;
+    position: relative;
+    width: fit-content;
+}
+
+.banner-title span::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0.16);
+    height: 2px;
+    bottom: -6px;
+    left: 0;
+    background-color: var(--base-color);
+    transform-origin: bottom left;
+    transition: transform 0.25s ease-out;
+}
+
+.banner-title:hover span::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.product-list {
+    overflow-x: scroll;
+    padding-top: 3rem;
+}
+
+.product-list::-webkit-scrollbar {
+    display: none;
+}
+
+.product-list-image {
+    width: 50%;
+    flex: 0 0 auto;
+    padding: 1rem;
+    align-items: center;
+}
+
+.product-list-image img {
+    width: 100%;
+    height: 12rem;
+    width: 12rem;
+    background-color: #F1F3F7;
+    border-radius: 50%;
+}
+
+.product-list-text {
+    padding-top: 1.5rem;
+}
+
+.product-list-text p {
+    align-items: first baseline;
+    font-size: 1.4rem;
+    font-weight: 500;
+    margin: 0;
+}
+
+.product-list-text p:last-child {
+    opacity: 0.5;
+}
+
+.top-deal {
+    padding-top: 5rem;
+}
+
+.top-deal-info p {
+    margin: 0;
+}
+
+.toshiba {
+    color: var(--secondary-text);
+}
+
+.price {
+    color: var(--search-button);
+}
+
+.sale-price {
+    color: var(--secondary-text);
+}
+
+.carousel-indicators [data-bs-target] {
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    background-color: var(--secondary-text);
+}
+
+.carousel-indicators [data-bs-target]:active {
+    background-color: var(--blakc);
+}
+
+.carousel-product-list {
+    margin-top: 2rem;
+}
+
+.image-list-wrapper {
+    display: flex;
+}
+
+.carousel-product-list .carousel-item {
+    max-height: 55vh;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    top: 28%;
+    bottom: 72%;
+}
