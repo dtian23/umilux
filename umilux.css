@@ -3,6 +3,7 @@
     --bg-second: #F1F3F7;
     --whrite: #ffffff;
     --blakc: #000000;
+    --grey: #999999;
     --search-button: #00A2C2;
     --console: #332B3C;
     --camera: #6944E6;
@@ -82,4 +83,8 @@ p {
 
 h2 {
     font-size: 3.6rem;
+}
+
+h3 {
+    font-size: 2.4rem;
 }
