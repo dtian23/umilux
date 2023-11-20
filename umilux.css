@@ -9,6 +9,7 @@
     --camera: #6944E6;
     --deal: #DE3B62;
     --secondary-text: #8D979E;
+    --body-fashion: #555555;
     --pre-order: #F8BA26;
     --bg-bold: #F1F3F7;
     --base-font-size: 16px;
@@ -71,6 +72,10 @@ button {
     color: var(--blakc);
 }
 
+.text-grey {
+    color: var(--grey);
+}
+
 .back-ground-blue {
     background-color: var(--search-button);
 }
@@ -97,4 +102,10 @@ h2 {
 
 h3 {
     font-size: 2.4rem;
+    font-weight: 600;
+}
+
+h5 {
+    font-size: 1.6rem;
+    font-weight: 600;
 }
