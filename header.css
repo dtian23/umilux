@@ -7,12 +7,12 @@
 
 .header-bar {
     background-color: var(--bg-header);
-    padding-top: 1.5rem;
-    padding-bottom: 2rem;
+    padding-top: 2rem;
+    padding-bottom: 2.5rem;
 }
 
 .search-bar {
-    padding-bottom: 1rem;
+    padding-bottom: 2rem;
 }
 
 .utilities a img {
@@ -155,8 +155,8 @@ input[type="search"] {
     font-size: 1.2rem;
 }
 
-.carousel-item {
-    height: 42rem;
+.carousel-slider .carousel-item {
+    height: 70vh;
 }
 
 .carousel-item img {
