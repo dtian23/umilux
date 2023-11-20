@@ -1,0 +1,38 @@
+.sign-up-wrapper {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.sign-up-text {
+    padding-bottom: 2rem;
+}
+
+.sign-up-text h2 {
+    font-size: 2.4rem;
+}
+
+.sign-up-text p {
+    color: var(--body-fashion);
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+.sign-up-form {
+    font-size: 1.4rem;
+}
+
+.sign-up-form input {
+    padding: 1rem 2rem;
+    margin-bottom: 1rem;
+    border-radius: 3rem;
+    border: 1px solid var(--border-nav);
+}
+
+.sign-up-form a {
+    width: 100%;
+    color: var(--whrite);
+    background-color: var(--search-button);
+    padding: 1rem 2rem;
+    border-radius: 3rem;
+    border: 1px solid var(--search-button);
+}

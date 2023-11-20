@@ -343,6 +343,23 @@
     font-weight: 500;
 }
 
+.shipping-wrapper {
+    border-top: 1px solid var(--border-nav);
+}
+
+.shipping {
+    padding-top: 3rem;
+}
+
+.shipping-service {
+    padding-bottom: 3rem;
+}
+
+.shipping-service p {
+    color: var(--body-fashion);
+    font-weight: 500;
+}
+
 @media only screen and (min-width: 1200px) {
 
     .icon-block {
