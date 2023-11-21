@@ -36,3 +36,36 @@
     border-radius: 3rem;
     border: 1px solid var(--search-button);
 }
+
+.footer {
+    background-color: var(--bg-bold);
+}
+
+.accordion-item {
+    border: none;
+}
+
+.accordion-item button,
+.accordion-item div {
+    background-color: var(--bg-bold);
+}
+
+.accordion-item button {
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+.accordion-body {
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+.phone-number {
+    font-size: 2.2rem;
+    color: var(--search-button);
+    margin-bottom: 1rem;
+}
+
+.tool-tip icon {
+    padding: 0 1.25rem;
+}
