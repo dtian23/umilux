@@ -22,6 +22,8 @@
     padding: 0;
     margin-bottom: 2rem;
     border-radius: 1rem;
+    width: 100%;
+    aspect-ratio: 29/12;
 }
 
 .shop-gamepad {
@@ -50,13 +52,14 @@
 
 .banner-image {
     display: flex;
+    align-items: center;
     width: 55%;
 }
 
 .banner-image img {
-    flex: 1 1 auto;
     width: 100%;
     min-height: 15rem;
+    aspect-ratio: 27/20;
 }
 
 .banner-title a {
@@ -97,8 +100,8 @@
 }
 
 .product-list-image {
-    width: 50%;
-    flex: 0 0 auto;
+    /* width: 50%; */
+    flex: 1 0 auto;
     padding: 1rem;
     align-items: center;
 }
@@ -173,6 +176,10 @@
 .base-price {
     font-size: 1.4rem;
     color: var(--secondary-text);
+}
+
+.top-deal-wrapper {
+    overflow-x: hidden;
 }
 
 .top-deal-text p {
@@ -358,6 +365,13 @@
 .shipping-service p {
     color: var(--body-fashion);
     font-weight: 500;
+}
+
+@media only screen and (min-width: 425px) {
+
+    .banner-text {
+        left: 10%;
+    }
 }
 
 @media only screen and (min-width: 1200px) {
