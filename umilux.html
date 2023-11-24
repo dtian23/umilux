@@ -266,8 +266,7 @@
     <main>
         <div id="carousel-slider"
             class="carousel-slider carousel slide"
-            data-bs-ride="carousel" data-bs-touch="true"
-            data-bs-interval="5000">
+            data-bs-touch="true" data-bs-interval="5000">
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <img src="media/slide-1.svg"
@@ -415,7 +414,7 @@
 
             <div id="carousel-product-list"
                 class="carousel-product-list container carousel carousel-dark slide"
-                data-bs-touch="true" data-bs-ride="carousel"
+                data-bs-touch="true"
                 data-bs-interval="5000">
 
                 <div class="carousel-inner">
@@ -493,7 +492,7 @@
                             </div>
 
                             <div
-                                class="console product-list-image d-flex flex-column">
+                                class="console product-list-image d-sm-flex flex-column d-none">
                                 <img src="media/main-gamepad.svg"
                                     alt="Gamepad/Console">
                                 <div
@@ -504,7 +503,7 @@
                             </div>
 
                             <div
-                                class="camera product-list-image d-flex flex-column">
+                                class="camera product-list-image d-sm-flex flex-column d-none">
                                 <img src="media/main-photo.svg"
                                     alt="Camera/Photo">
                                 <div
@@ -515,7 +514,7 @@
                             </div>
 
                             <div
-                                class="heat-sink product-list-image d-xl-flex flex-column d-none">
+                                class="heat-sink product-list-image d-md-flex flex-column d-none">
                                 <img src="media/main-pc.svg"
                                     alt="Heatsink PC">
                                 <div
@@ -526,7 +525,7 @@
                             </div>
 
                             <div
-                                class="electronic product-list-image d-xl-flex flex-column d-none">
+                                class="electronic product-list-image d-md-flex flex-column d-none">
                                 <img src="media/main-electronics.svg"
                                     alt="Home/Electronics">
                                 <div
@@ -625,14 +624,16 @@
                     <button type="button"
                         data-bs-target="#carousel-product-list"
                         data-bs-slide-to="2"
-                        aria-label="Slide 3"></button>
+                        aria-label="Slide 3"
+                        class="d-md-none"></button>
                     <button type="button"
                         data-bs-target="#carousel-product-list"
                         data-bs-slide-to="3"
                         aria-label="Slide 4"
                         class="d-sm-none"></button>
                 </div>
-                <button class="carousel-control-prev"
+                <button
+                    class="carousel-control-prev d-sm-none"
                     type="button"
                     data-bs-target="#carousel-product-list"
                     data-bs-slide="prev">
@@ -641,7 +642,8 @@
                     <span
                         class="visually-hidden">Previous</span>
                 </button>
-                <button class="carousel-control-next"
+                <button
+                    class="carousel-control-next d-sm-none"
                     type="button"
                     data-bs-target="#carousel-product-list"
                     data-bs-slide="next">
@@ -1208,7 +1210,6 @@
                             <div id="carousel-top-selling"
                                 class="carousel carousel-dark slide"
                                 data-bs-touch="true"
-                                data-bs-ride="carousel"
                                 data-bs-interval="5000">
                                 <div class="carousel-inner">
                                     <div
@@ -1572,7 +1573,6 @@
                         <div id="carousel-recommended-product"
                             class="carousel carousel-dark slide"
                             data-bs-touch="true"
-                            data-bs-ride="carousel"
                             data-bs-interval="5000">
                             <div class="carousel-inner">
                                 <div
