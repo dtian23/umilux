@@ -157,9 +157,10 @@ input[type="search"] {
 
 .carousel-slider .carousel-item {
     height: 70vh;
+    max-height: 50rem;
 }
 
-.carousel-item img {
+.carousel-slider img {
     height: 100%;
     object-fit: cover;
 }

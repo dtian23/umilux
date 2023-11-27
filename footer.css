@@ -22,19 +22,27 @@
 }
 
 .sign-up-form input {
+    flex: 1 0 auto;
+    min-height: 5rem;
+    max-width: 45rem;
     padding: 1rem 2rem;
-    margin-bottom: 1rem;
     border-radius: 3rem;
     border: 1px solid var(--border-nav);
 }
 
-.sign-up-form a {
-    width: 100%;
-    color: var(--whrite);
+.sign-up-form span {
+    flex: 1 0 auto;
+    min-height: 5rem;
+    max-width: 45rem;
+    text-align: center;
     background-color: var(--search-button);
-    padding: 1rem 2rem;
     border-radius: 3rem;
     border: 1px solid var(--search-button);
+}
+
+.sign-up-form a {
+    color: var(--whrite);
+    padding: 1rem 2rem;
 }
 
 .footer {
@@ -143,14 +151,7 @@
 
 .footer-copy-right {
     font-size: 1.4rem;
-    /* padding: 0 1rem; */
 }
-
-/* .footer-payment {
-    margin-left: -.5rem;
-    margin-right: -.5rem;
-    padding: 0 1rem;
-} */
 
 .footer-payment img {
     padding: 0 .5rem;
@@ -159,4 +160,23 @@
 
 .footer-drop-wrapper {
     padding-bottom: 10vh;
+}
+
+@media only screen and (min-width: 576px) {
+
+    /* .sign-up-form span {
+        max-width: 15rem !important;
+    } */
+
+    .sign-up-form input {
+        max-width: 45rem !important;
+    }
+
+}
+
+@media only screen and (min-width: 768px) {
+
+    .sign-up-form span {
+        max-width: 15rem !important;
+    }
 }

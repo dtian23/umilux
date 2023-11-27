@@ -17,13 +17,26 @@
     padding: 3rem 0;
 }
 
-.shop- {
-    justify-content: end;
-    padding: 0;
+.type-of-shops {
+    padding-top: 3rem;
+    /* padding-bottom: 3rem; */
+}
+
+.shop-wrapper {
+    /* justify-content: end; */
+    padding-left: .75rem;
+    padding-right: .75rem;
+    padding-bottom: 3rem;
+    /* margin-left: .75rem;
+    margin-right: .75rem;
     margin-bottom: 2rem;
     border-radius: 1rem;
-    width: 100%;
-    aspect-ratio: 29/12;
+    width: 100%; */
+    /* aspect-ratio: 29/12; */
+}
+
+.shop-wrapper section {
+    border-radius: 1rem;
 }
 
 .shop-gamepad {
@@ -140,8 +153,12 @@
     border-radius: 50%;
 }
 
+/* .product-list-wrapper {
+    padding-top: 3rem;
+} */
+
 .carousel-product-list {
-    margin-top: 2rem;
+    padding-top: 3rem;
 }
 
 .image-list-wrapper {
@@ -156,7 +173,7 @@
 
 .carousel-product-list .carousel-control-prev,
 .carousel-product-list .carousel-control-next {
-    top: 87%;
+    top: 89%;
 }
 
 .toshiba {
@@ -187,14 +204,15 @@
 }
 
 .card-wrapper {
-    width: 50%;
-    padding: 0 1rem;
+    /* width: 50%; */
+    padding: 0 1.5rem;
 }
 
-.top-deal-list {
-    padding-top: 1.5rem;
-    margin-left: -1rem;
-    margin-right: -1rem;
+.top-deal-list,
+.recommended-list {
+    padding-top: 3rem;
+    margin-left: -1.5rem;
+    margin-right: -1.5rem;
 }
 
 .top-deal-list .card-wrapper {
@@ -215,6 +233,9 @@
 }
 
 .card-body {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: start;
     padding-left: 0;
     padding-right: 0;
 }
@@ -292,14 +313,14 @@
 }
 
 .top-selling-list {
-    padding-top: 1.5rem;
+    padding-top: 3rem;
 }
 
-.recommended-list {
+/* .recommended-list {
     padding-top: 1.5rem;
     margin-left: -1rem;
     margin-right: -1rem;
-}
+} */
 
 .top-selling-list .carousel-control-prev,
 .top-selling-list .carousel-control-next {
@@ -307,17 +328,32 @@
 }
 
 .top-selling-image {
-    padding: 1rem;
+    display: flex;
+    justify-content: center;
 }
 
-.top-selling-card-body {
-    padding: 0 1rem;
+/* .top-selling-image {
+    padding: 1rem .5rem 1rem 1rem;
+} */
+
+/* .top-selling-card-body {
+    padding: 0 1rem 0 .5rem;
     margin-left: -1rem;
-}
+} */
 
 .top-selling-list-wrapper {
-    display: flex;
-    flex-flow: column wrap;
+    margin-left: -1.5rem;
+    margin-right: -1.5rem;
+}
+
+.top-selling-item {
+    padding: 0 1.5rem;
+}
+
+.top-selling-item>div {
+    padding: 1.5rem 0;
+    background-color: var(--whrite);
+    border-radius: 1rem;
 }
 
 .recommended-list-wrapper {
@@ -325,19 +361,28 @@
     flex-flow: row wrap;
 }
 
+/* .recommended-list-wrapper .card-wrapper {
+    width: 50%;
+} */
+
 .recommended-list .carousel-control-prev,
 .recommended-list .carousel-control-next {
     top: 93%;
 }
 
+.deal-and-promotion-list .card-body {
+    justify-content: center;
+}
+
 .deal-and-promotion-text {
+    padding-bottom: 1.5rem;
     border-bottom: 1px solid var(--border-nav);
 }
 
 .deal-and-promotion .card {
     padding: 1.5rem 1rem;
-    margin-left: -1rem;
-    margin-right: -1rem;
+    /* margin-left: -1rem;
+    margin-right: -1rem; */
 }
 
 .deal-and-promotion .card img {
@@ -354,12 +399,9 @@
     border-top: 1px solid var(--border-nav);
 }
 
-.shipping {
-    padding-top: 3rem;
-}
-
 .shipping-service {
-    padding-bottom: 3rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
 }
 
 .shipping-service p {
@@ -374,6 +416,23 @@
     }
 }
 
+@media only screen and (min-width: 768px) {
+
+    .banner-text p {
+        font-size: 2.4rem;
+    }
+
+    .banner-title a {
+        font-size: 2rem;
+    }
+
+    .card-body {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}
+
+
 @media only screen and (min-width: 1200px) {
 
     .icon-block {
@@ -381,6 +440,11 @@
         opacity: 0;
         visibility: hidden;
         transition: all .6s ease;
+    }
+
+    .top-deal-wrapper .card-wrapper,
+    .recommended-list .card-wrapper {
+        width: 20%;
     }
 
 }
