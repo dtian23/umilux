@@ -3,6 +3,10 @@
     padding-bottom: 3rem;
 }
 
+.accordion-button {
+    padding: 1rem 0 !important;
+}
+
 .sign-up-text {
     padding-bottom: 2rem;
 }
@@ -45,12 +49,20 @@
     padding: 1rem 2rem;
 }
 
+.shipping-image {
+    margin-bottom: 1rem;
+}
+
 .footer {
     background-color: var(--bg-bold);
 }
 
 .information-menu-wrapper {
     padding-bottom: 2rem;
+}
+
+.accordion-body {
+    padding: 1rem 0;
 }
 
 .accordion-item {
@@ -95,19 +107,51 @@
 }
 
 .tooltip-icon {
-    padding: 0 1.25rem;
-    margin-top: -.5rem;
+    /* padding: 0 1.25rem; */
+    margin-top: .5rem;
     margin-bottom: 2rem;
+}
+
+.tooltip-icon a {
+    padding: 0 2rem 0 0;
 }
 
 .custom-tooltip {
     font-size: 1.4rem;
 }
 
+.footer-section {
+    font-weight: 600;
+    padding: 0 0 1rem 0;
+}
+
+.accordion-item {
+    background-color: var(--bg-bold);
+}
+
+.accordion-body {
+    padding: 1rem 0 0 0;
+}
+
+.accordion-body p {
+    padding: 0 0 1rem 0;
+}
+
 .list-group-item {
-    padding: 1rem 0 !important;
+    /* padding-top: 0;
+    padding-bottom: 1rem; */
+    padding: 0 0 1rem 0;
     background-color: transparent;
     border: none;
+}
+
+.list-group-item a {
+    color: var(--bs-list-group-color);
+}
+
+.list-group-item a:hover {
+    padding-left: 1.5rem;
+    transition: all .4s ease;
 }
 
 /* .drop-down-footer {
@@ -162,6 +206,15 @@
     padding-bottom: 10vh;
 }
 
+.footer-drop-wrapper>* {
+    margin-bottom: 1.5rem;
+}
+
+.dropdown-toggle {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
 @media only screen and (min-width: 576px) {
 
     /* .sign-up-form span {
@@ -179,4 +232,13 @@
     .sign-up-form span {
         max-width: 15rem !important;
     }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+
+    .accordion-item {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
 }

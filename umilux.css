@@ -12,6 +12,7 @@
     --body-fashion: #555555;
     --pre-order: #F8BA26;
     --bg-bold: #F1F3F7;
+    --top-bar-border: #364a9b;
     --base-font-size: 16px;
     --base-font-weight: 400;
     --base-font-header: 14px;
@@ -57,9 +58,33 @@ button {
 
 /************************************************************************/
 
-.px-12-5 {
+.px-125 {
     padding-left: 1.25rem;
     padding-right: 1.25rem;
+}
+
+.pl-25 {
+    padding-left: 2.5rem;
+}
+
+.pr-25 {
+    padding-right: 2.5rem;
+}
+
+.fs-11 {
+    font-size: 1.1rem;
+}
+
+.fs-13 {
+    font-size: 1.3rem;
+}
+
+.fs-14 {
+    font-size: 1.4rem;
+}
+
+.fs-16 {
+    font-size: 1.6rem;
 }
 
 /************************************************************************/
@@ -84,6 +109,14 @@ button {
     background-color: var(--pre-order);
 }
 
+/************************************************************************/
+
+.container-fluid {
+    --bs-gutter-x: 3rem;
+    --bs-gutter-y: 0;
+    max-width: 147rem;
+}
+
 ul {
     list-style-type: none;
 }
@@ -94,10 +127,13 @@ li a {
 
 p {
     font-size: 1.6rem;
+    margin: 0;
+    overflow-wrap: anywhere;
 }
 
 h2 {
     font-size: 3.6rem;
+    font-weight: 600;
 }
 
 h3 {
@@ -108,6 +144,14 @@ h3 {
 h5 {
     font-size: 1.6rem;
     font-weight: 600;
+}
+
+@media only screen and (min-width: 1200px) {
+
+    .container-fluid {
+        --bs-gutter-x: 6rem;
+        --bs-gutter-y: 0;
+    }
 }
 
 @media only screen and (min-width: 1400px) {
