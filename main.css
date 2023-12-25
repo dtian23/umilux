@@ -174,7 +174,15 @@
 
 .carousel-product-list .carousel-control-prev,
 .carousel-product-list .carousel-control-next {
-    top: 89%;
+    top: 71%;
+}
+
+.carousel-control-prev {
+    left: 2.5rem;
+}
+
+.carousel-control-next {
+    right: 2.5rem;
 }
 
 .toshiba {
