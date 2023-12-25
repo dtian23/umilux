@@ -25,7 +25,7 @@
 }
 
 .part-gap {
-    padding: 3rem 0;
+    padding: 2rem 0;
 }
 
 .shop-wrapper {
@@ -115,7 +115,7 @@
 .product-list-image {
     /* width: 50%; */
     flex: 1 0 auto;
-    padding: 1rem;
+    padding: 1.5rem;
     align-items: center;
 }
 
@@ -153,10 +153,10 @@
     border-radius: 50%;
 }
 
-.product-list-wrapper {
+/* .product-list-wrapper {
     padding-top: 3rem;
     padding-bottom: 3rem;
-}
+} */
 
 /* .carousel-product-list {
     padding-top: 3rem;
@@ -465,6 +465,11 @@
     }
 }
 
+@media only screen and (min-width: 992px) {
+    .part-gap {
+        padding: 3rem 0;
+    }
+}
 
 @media only screen and (min-width: 1200px) {
 

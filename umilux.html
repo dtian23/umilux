@@ -26,16 +26,15 @@
     <header class="header d-flex flex-wrap">
 
         <div class="header-bar vstack flex-wrap">
-            <div class="for-help-wrapper">
+            <div class="for-help-wrapper container-fluid">
                 <div
-                    class="for-help container-fluid d-flex justify-content-between align-items-center d-none d-lg-flex">
+                    class="for-help d-flex justify-content-between align-items-center d-none d-lg-flex">
                     <div
                         class="header-info hstack flex-wrap color-white">
-                        <p class="hotline pr-25 fs-13">
+                        <p class="hotline fs-13">
                             Need
                             Help? +222-1800-2628</p>
-                        <p
-                            class="email-address pr-25 fs-13">
+                        <p class="email-address fs-13">
                             blueskytechcompany@gmail.com</p>
                     </div>
                     <div
@@ -44,7 +43,7 @@
                             class="our-store text-decoration-none pl-25 color-white fs-13">Our
                             Stores</a>
                         <a href="#"
-                            class="hstack language text-decoration-none pl-25 gap-3 color-white fs-13">English
+                            class="hstack language text-decoration-none pl-25 gap-2 color-white fs-13">English
                             <svg style="font-size: 1rem;"
                                 xmlns="http://www.w3.org/2000/svg"
                                 height="1em"
@@ -59,7 +58,7 @@
                             </svg>
                         </a>
                         <a href="#"
-                            class="hstack currency text-decoration-none pl-25 gap-3 color-white fs-13">United
+                            class="hstack currency text-decoration-none pl-25 gap-2 color-white fs-13">United
                             States (USD $)
                             <svg style="font-size: 1rem;"
                                 xmlns="http://www.w3.org/2000/svg"
@@ -78,129 +77,105 @@
                 </div>
             </div>
 
-            <div
-                class="search-bar container-fluid d-flex flex-row flex-wrap">
-                <div class="menu-toggle d-lg-none">
-                    <a href="javascript:void(0)"
-                        onclick="openNav();setGray(); on()"
-                        class="color-white">
-                        <svg xmlns="http://www.w3.org/2000/svg"
-                            width="27" height="27"
-                            fill="currentColor"
-                            class="bi bi-list"
-                            viewBox="2.3 2 14 12">
-                            <path fill-rule="evenodd"
-                                d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
-                        </svg>
-                    </a>
-                </div>
-
-                <div class="brand">
-                    <a class="d-flex flex-wrap justify-content-center"
-                        href="#">
-                        <img src="media/brand.svg"
-                            class="image-brand"
-                            alt="Umilux brand icon">
-                    </a>
-                </div>
-
+            <div class="search-bar-wrapper container-fluid">
                 <div
-                    class="utilities hstack justify-content-end">
-                    <a
-                        class="login hstack align-items-center d-none d-lg-flex gap-3 text-decoration-none">
-                        <img src="media/icon-user.svg"
-                            class="icon-user"
-                            alt="Login icon">
-                        <span
-                            class="login-note d-flex flex-column">
-                            <p class="login-text fs-11">
-                                Login</p>
-                            <p class="login-account fs-14">
-                                Account</p>
-                        </span>
-                    </a>
-
-                    <a href="#"
-                        class="wish-list d-none d-lg-flex">
-                        <img src="media/icon-wishlist.svg"
-                            class="icon-wish-list"
-                            alt="Wish list">
-                    </a>
-
-                    <a
-                        class="cart hstack align-items-center d-flex gap-3 text-decoration-none">
-                        <img src="media/icon-cart.svg"
-                            class="icon-cart"
-                            alt="Your cart">
-                        <span
-                            class="cart-note d-none d-lg-flex flex-column">
-                            <p class="cart-text fs-11">
-                                Cart</p>
-                            <p class="total-price fs-14">
-                                $590</p>
-                        </span>
-                    </a>
-                </div>
-
-                <div
-                    class="search-input hstack align-items-center position-relative">
-                    <input class="position-relative fs-5"
-                        type="search"
-                        placeholder="I'm looking for..."
-                        value autocomplete="off">
-
-                    <div
-                        class="icon-search position-absolute">
-                        <svg xmlns="http://www.w3.org/2000/svg"
-                            width="24" height="24"
-                            viewBox="0 0 24 24" fill="none"
-                            stroke="#999999"
-                            stroke-width="2"
-                            stroke-linecap="round"
-                            stroke-linejoin="round">
-                            <circle cx="11" cy="11" r="8">
-                            </circle>
-                            <line x1="21" y1="21" x2="16.65"
-                                y2="16.65"></line>
-                        </svg>
+                    class="search-bar d-flex flex-row flex-wrap">
+                    <div class="menu-toggle d-lg-none">
+                        <a href="javascript:void(0)"
+                            onclick="openNav();setGray(); on()"
+                            class="color-white">
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                width="27" height="27"
+                                fill="currentColor"
+                                class="bi bi-list"
+                                viewBox="2.3 2 14 12">
+                                <path fill-rule="evenodd"
+                                    d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+                            </svg>
+                        </a>
                     </div>
 
-                    <a class="search-button color-white
+                    <div class="brand">
+                        <a class="d-flex flex-wrap justify-content-center"
+                            href="#">
+                            <img src="media/brand.svg"
+                                class="image-brand"
+                                alt="Umilux brand icon">
+                        </a>
+                    </div>
+
+                    <div
+                        class="utilities hstack justify-content-end">
+                        <a
+                            class="login hstack align-items-center d-none d-lg-flex gap-3 text-decoration-none">
+                            <img src="media/icon-user.svg"
+                                class="icon-user"
+                                alt="Login icon">
+                            <span
+                                class="login-note d-flex flex-column">
+                                <p class="login-text fs-11">
+                                    Login</p>
+                                <p
+                                    class="login-account fs-14">
+                                    Account</p>
+                            </span>
+                        </a>
+
+                        <a href="#"
+                            class="wish-list d-none d-lg-flex">
+                            <img src="media/icon-wishlist.svg"
+                                class="icon-wish-list"
+                                alt="Wish list">
+                        </a>
+
+                        <a
+                            class="cart hstack align-items-center d-flex gap-3 text-decoration-none">
+                            <img src="media/icon-cart.svg"
+                                class="icon-cart"
+                                alt="Your cart">
+                            <span
+                                class="cart-note d-none d-lg-flex flex-column">
+                                <p class="cart-text fs-11">
+                                    Cart</p>
+                                <p
+                                    class="total-price fs-14">
+                                    $590</p>
+                            </span>
+                        </a>
+                    </div>
+
+                    <div
+                        class="search-input hstack align-items-center position-relative">
+                        <input
+                            class="position-relative fs-5"
+                            type="search"
+                            placeholder="I'm looking for..."
+                            value autocomplete="off">
+
+                        <div
+                            class="icon-search position-absolute">
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                width="24" height="24"
+                                viewBox="0 0 24 24"
+                                fill="none" stroke="#999999"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <circle cx="11" cy="11"
+                                    r="8">
+                                </circle>
+                                <line x1="21" y1="21"
+                                    x2="16.65" y2="16.65">
+                                </line>
+                            </svg>
+                        </div>
+
+                        <a class="search-button color-white
                     text-center text-decoration-none
                     position-absolute">Search</a>
+                    </div>
                 </div>
             </div>
-
-            <!-- <div class="search-input-wrapper container-fluid">
-                <div
-                    class="search-input hstack align-items-center position-relative">
-                    <input class="position-relative fs-5"
-                        type="search"
-                        placeholder="I'm looking for..."
-                        value autocomplete="off">
-
-                    <div
-                        class="icon-search position-absolute">
-                        <svg xmlns="http://www.w3.org/2000/svg"
-                            width="24" height="24"
-                            viewBox="0 0 24 24" fill="none"
-                            stroke="#999999"
-                            stroke-width="2"
-                            stroke-linecap="round"
-                            stroke-linejoin="round">
-                            <circle cx="11" cy="11" r="8">
-                            </circle>
-                            <line x1="21" y1="21" x2="16.65"
-                                y2="16.65"></line>
-                        </svg>
-                    </div>
-
-                    <a class="search-button color-white
-                    text-center text-decoration-none
-                    position-absolute">Search</a>
-                </div>
-            </div> -->
-
 
         </div>
     </header>
@@ -399,87 +374,93 @@
 
         <div class="main-body">
             <div
-                class="type-of-shops container-fluid d-flex flex-lg-row flex-lg-nowrap flex-column flex-wrap">
-
+                class="type-of-shop-wrapper container-fluid">
                 <div
-                    class="shop-wrapper col-12 col-lg-4 px-4">
-                    <section
-                        class="shop-gamepad d-flex flex-row position-relative justify-content-end">
-                        <div
-                            class="banner-text position-absolute">
-                            <p>Gamepad <br> Save Up To $69
-                            </p>
-                            <div
-                                class="banner-title d-flex-column row-gap-10">
-                                <span>
-                                    <a href="#musthave"
-                                        class="text-decoration-none color-white">
-                                        Shop Gamepad
-                                    </a>
-                                </span>
-                            </div>
-                        </div>
-                        <div class="banner-image">
-                            <img src="media/main-console.svg"
-                                alt="Shop console">
-                        </div>
-                    </section>
-                </div>
+                    class="type-of-shops d-flex flex-lg-row flex-lg-nowrap flex-column flex-wrap">
 
-                <div
-                    class="shop-wrapper col-12 col-lg-4 px-4">
-                    <section
-                        class="shop-deal d-flex flex-row position-relative justify-content-end">
-                        <div
-                            class="banner-text position-absolute">
-                            <p>Buy 1 Get 1 <br> Save Up To
-                                $559
-                            </p>
+                    <div
+                        class="shop-wrapper col-12 col-lg-4 px-4">
+                        <section
+                            class="shop-gamepad d-flex flex-row position-relative justify-content-end">
                             <div
-                                class="banner-title d-flex-column row-gap-10">
-                                <span>
-                                    <a href="#musthave"
-                                        class="text-decoration-none color-white">
-                                        Shop Deals
-                                    </a>
-                                </span>
+                                class="banner-text position-absolute">
+                                <p>Gamepad <br> Save Up To
+                                    $69
+                                </p>
+                                <div
+                                    class="banner-title d-flex-column row-gap-10">
+                                    <span>
+                                        <a href="#musthave"
+                                            class="text-decoration-none color-white">
+                                            Shop Gamepad
+                                        </a>
+                                    </span>
+                                </div>
                             </div>
-                        </div>
-                        <div class="banner-image">
-                            <img src="media/main-phones.svg"
-                                alt="Shop phones">
-                        </div>
-                    </section>
-                </div>
+                            <div class="banner-image">
+                                <img src="media/main-console.svg"
+                                    alt="Shop console">
+                            </div>
+                        </section>
+                    </div>
 
-                <div
-                    class="shop-wrapper col-12 col-lg-4 px-4">
-                    <section
-                        class=" shop-camera d-flex flex-row position-relative justify-content-end">
-                        <div
-                            class="banner-text position-absolute">
-                            <p>Cameras <br> Save Up To $159
-                            </p>
+                    <div
+                        class="shop-wrapper col-12 col-lg-4 px-4">
+                        <section
+                            class="shop-deal d-flex flex-row position-relative justify-content-end">
                             <div
-                                class="banner-title d-flex-column row-gap-10">
-                                <span>
-                                    <a href="#musthave"
-                                        class="text-decoration-none color-white">
-                                        Shop Camera
-                                    </a>
-                                </span>
+                                class="banner-text position-absolute">
+                                <p>Buy 1 Get 1 <br> Save Up
+                                    To
+                                    $559
+                                </p>
+                                <div
+                                    class="banner-title d-flex-column row-gap-10">
+                                    <span>
+                                        <a href="#musthave"
+                                            class="text-decoration-none color-white">
+                                            Shop Deals
+                                        </a>
+                                    </span>
+                                </div>
                             </div>
-                        </div>
-                        <div class="banner-image">
-                            <img src="media/main-camera.svg"
-                                alt="Shop camera">
-                        </div>
-                    </section>
+                            <div class="banner-image">
+                                <img src="media/main-phones.svg"
+                                    alt="Shop phones">
+                            </div>
+                        </section>
+                    </div>
+
+                    <div
+                        class="shop-wrapper col-12 col-lg-4 px-4">
+                        <section
+                            class=" shop-camera d-flex flex-row position-relative justify-content-end">
+                            <div
+                                class="banner-text position-absolute">
+                                <p>Cameras <br> Save Up To
+                                    $159
+                                </p>
+                                <div
+                                    class="banner-title d-flex-column row-gap-10">
+                                    <span>
+                                        <a href="#musthave"
+                                            class="text-decoration-none color-white">
+                                            Shop Camera
+                                        </a>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="banner-image">
+                                <img src="media/main-camera.svg"
+                                    alt="Shop camera">
+                            </div>
+                        </section>
+                    </div>
                 </div>
             </div>
 
             <div
-                class="product-list-wrapper container-fluid d-md-none">
+                class="product-list-wrapper container-fluid d-md-none part-gap">
                 <div id="carousel-product-list"
                     class="carousel-product-list carousel carousel-dark slide"
                     data-bs-touch="true"
