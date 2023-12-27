@@ -76,35 +76,36 @@ function goBack() {
 }
 
 function setGray() {
-    document.getElementById("overLay").style.zIndex = "99";
+    // document.getElementById("overLay").style.zIndex = "99";
 }
 
-function setGraySearch() {
-    document.getElementById("overLay-screen").style.zIndex = "99";
-}
+// function setGraySearch() {
+//     document.getElementById("overLay-screen").style.zIndex = "99";
+// }
 
 function on() {
-    document.getElementById("overLay").style.display = "block";
+    // document.getElementById('overLay').style.display = "block";
 }
 
 // function onSearch() {
 //     document.getElementById("overLay-screen").style.display = "block";
 // }
 
-function off() {
-    document.getElementById("overLay").style.display = "none";
-    document.getElementById("overLay-screen").style.display = "none";
+function no() {
+    // document.getElementById('overLay').style.display = "none";
+    // document.getElementById("overLay").style.zIndex = "-1";
+    // document.getElementById("overLay-screen").style.display = "none";
 }
 
-// function disableScroll() {
-//     scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-//     scrollLeft = window.pageXOffset || document.documentElement.scrollLeft,
+function disableScroll() {
+    scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    scrollLeft = window.pageXOffset || document.documentElement.scrollLeft,
 
-//         window.onscroll = function () {
-//             window.scrollTo(scrollLeft, scrollTop);
-//         };
-// }
+        window.onscroll = function () {
+            window.scrollTo(scrollLeft, scrollTop);
+        };
+}
 
-// function enableScroll() {
-//     window.onscroll = function () { };
-// }
+function enableScroll() {
+    window.onscroll = function () { };
+}

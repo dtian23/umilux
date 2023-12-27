@@ -11,6 +11,7 @@
     --secondary-text: #8D979E;
     --body-fashion: #555555;
     --pre-order: #F8BA26;
+    --rating: #FFB800;
     --bg-bold: #F1F3F7;
     --top-bar-border: #364a9b;
     --base-font-size: 16px;
@@ -57,6 +58,9 @@ button {
 }
 
 /************************************************************************/
+.transition {
+    transition: all .6s;
+}
 
 .px-125 {
     padding-left: 1.25rem;
@@ -109,7 +113,22 @@ button {
     background-color: var(--pre-order);
 }
 
+.checked {
+    color: var(--rating);
+}
+
 /************************************************************************/
+
+#overLay {
+    position: fixed;
+    display: none;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 2;
+}
 
 .container-fluid {
     --bs-gutter-x: 3rem;
