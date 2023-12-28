@@ -41,12 +41,17 @@
     text-align: center;
     background-color: var(--search-button);
     border-radius: 3rem;
-    border: 1px solid var(--search-button);
+    transition: all .4s;
+}
+
+.sign-up-form span:hover {
+    background-color: var(--blakc);
 }
 
 .sign-up-form a {
     color: var(--whrite);
     padding: 1rem 2rem;
+    font-weight: 600;
 }
 
 .shipping-image {
@@ -147,11 +152,11 @@
 
 .list-group-item a {
     color: var(--bs-list-group-color);
+    transition: all .6s ease;
 }
 
 .list-group-item a:hover {
     padding-left: 1.5rem;
-    transition: all .4s ease;
 }
 
 /* .drop-down-footer {
@@ -164,9 +169,15 @@
     color: var(--blakc);
 }
 
-.choose-language .dropdown-menu,
+/* .choose-language .dropdown-menu,
 .choose-currency .dropdown-menu {
     transition: all .5s ease;
+} */
+
+.dropdown-menu {
+    transition: all .5s ease;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    border: none;
 }
 
 .choose-language .dropdown-menu li,
@@ -213,6 +224,19 @@
 .dropdown-toggle {
     padding-top: 0;
     padding-bottom: 0;
+}
+
+.tooltip-icon button:not(:first-child) {
+    margin-left: 1rem;
+}
+
+.btn-tooltip {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.text-fs .tooltip-inner {
+    font-size: 1.6rem;
 }
 
 @media only screen and (min-width: 576px) {

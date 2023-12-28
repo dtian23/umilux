@@ -59,8 +59,8 @@
     color: var(--whrite);
 }
 
-.language a,
-.currency a {
+.language button,
+.currency button {
     padding: 0;
     border: none;
     background: transparent;
@@ -93,7 +93,19 @@
     padding: .375rem .75rem;
 }
 
-.dropdown-menu.show {
+/* .dropdown-menu-header {
+    bottom: -3rem;
+} */
+
+.dropdown-menu-header {
+    position: absolute;
+    inset: 0px auto auto 0px;
+    top: 10.4px;
+    right: 21.6px;
+    /* transform: translate3d(10.4px, 21.6px, 0px); */
+}
+
+.dropdown-menu-header.show {
     inset: 0px 0px auto auto !important;
     transform: translate3d(-13px, 28.5px, 0px) !important;
 }
@@ -392,6 +404,12 @@ input[type="search"] {
     border: none;
     border-radius: 3rem;
     width: fit-content;
+    transition: all .4s;
+}
+
+.slide-btn-buy:hover {
+    background-color: var(--search-button);
+    color: var(--whrite);
 }
 
 .nav-center {
@@ -442,6 +460,27 @@ input[type="search"] {
 .dropdown-menu-list a {
     padding-left: 1.5rem;
     padding-right: 3rem;
+    transition: all .4s;
+
+    path {
+        transition: all .4s;
+    }
+}
+
+.dropdown-title {
+    transition: all .4s;
+}
+
+.dropdown-menu-list a:hover {
+    path {
+        fill: var(--search-button);
+    }
+}
+
+.dropdown-menu-list a:hover {
+    .dropdown-title {
+        color: var(--search-button);
+    }
 }
 
 .dropdown-menu-list,
@@ -477,10 +516,20 @@ input[type="search"] {
     position: relative;
 }
 
-.mega-menu ul li:hover .nav-link,
-.mega-menu ul li:hover .nav-link i {
-    transition: all .3s;
-    color: red !important;
+.mega-menu ul li .nav-link {
+    transition: all .4s;
+
+    path {
+        transition: all .4s;
+    }
+}
+
+.mega-menu ul li:hover .nav-link {
+    color: var(--search-button);
+
+    path {
+        fill: var(--search-button);
+    }
 }
 
 .dropdown-item-mega-shop,
