@@ -117,10 +117,6 @@ button {
     color: var(--rating);
 }
 
-.col-lg-1-3 {
-    width: calc((100% - 2*3rem)/3);
-}
-
 /************************************************************************/
 
 #overLay {
@@ -167,6 +163,18 @@ h3 {
 h5 {
     font-size: 1.6rem;
     font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.btn {
+    padding-left: .75rem;
+    padding-right: .75rem;
+}
+
+@media only screen and (min-width: 992px) {
+    .col-lg-1-3 {
+        width: calc((100% - 2*3rem)/3);
+    }
 }
 
 @media only screen and (min-width: 1200px) {
@@ -174,6 +182,11 @@ h5 {
     .container-fluid {
         --bs-gutter-x: 6rem;
         --bs-gutter-y: 0;
+    }
+
+    .btn {
+        padding-left: 0;
+        padding-right: 1.5rem;
     }
 }
 
