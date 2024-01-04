@@ -2,12 +2,14 @@
     --bg-header: #253380;
     --bg-second: #F1F3F7;
     --whrite: #ffffff;
-    --blakc: #000000;
+    --blakc: #111111;
     --grey: #999999;
     --search-button: #00A2C2;
     --console: #332B3C;
     --camera: #6944E6;
     --deal: #DE3B62;
+    --hot-sticker: #d0473e;
+    --new-sticker: #516cf4;
     --secondary-text: #8D979E;
     --body-fashion: #555555;
     --pre-order: #F8BA26;
@@ -119,6 +121,11 @@ button {
 
 /************************************************************************/
 
+ul {
+    margin: 0;
+    padding: 0;
+}
+
 #overLay {
     position: fixed;
     display: none;
@@ -127,7 +134,8 @@ button {
     right: 0;
     bottom: 0;
     background-color: rgba(0, 0, 0, 0.5);
-    z-index: 2;
+    z-index: 10;
+    transition: all .4s;
 }
 
 .container-fluid {

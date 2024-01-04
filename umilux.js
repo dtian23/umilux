@@ -1,3 +1,18 @@
+const header = document.querySelector(".header");
+const toggleClass = "is-sticky";
+const scrollThreshold = 190;
+
+window.onscroll = () => {
+    const currentScroll = window.scrollY;
+    if (currentScroll > scrollThreshold) {
+        header.classList.add(toggleClass);
+    } else {
+        header.classList.remove(toggleClass);
+    }
+}
+
+/*********************************************************************************** */
+
 const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
 const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
 
@@ -50,19 +65,17 @@ function openSubNavBlog() {
     className[0].style.transform = "translateX(0)";
 }
 
-// function openSearch() {
-//     document.getElementById("search-tab").style.transform = "translateY(0)";
-//     document.getElementById("search-tab").style.visibility = "visible";
-//     document.getElementById("search-tab-screen").style.transform = "translateY(0)";
-//     document.getElementById("search-tab-screen").style.visibility = "visible";
-// }
+function openSearch() {
+    document.getElementById("search-tab").style.visibility = "visible";
+    document.getElementById("search-tab").style.opacity = "1";
+    document.getElementById("overLay").style.display = "block";
+}
 
-// function closeSearch() {
-//     document.getElementById("search-tab").style.transform = "translateY(-100%)";
-//     document.getElementById("search-tab").style.visibility = "hidden";
-//     document.getElementById("search-tab-screen").style.transform = "translateY(-100%)";
-//     document.getElementById("search-tab-screen").style.visibility = "hidden";
-// }
+function closeSearch() {
+    document.getElementById("search-tab").style.visibility = "hidden";
+    document.getElementById("search-tab").style.opacity = "0";
+    document.getElementById("overLay").style.display = "none";
+}
 
 function goBack() {
     document.getElementById("sub-nav-shop").style.transform = "translateX(-100%)";
@@ -98,8 +111,8 @@ function no() {
 }
 
 function disableScroll() {
-    scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-    scrollLeft = window.pageXOffset || document.documentElement.scrollLeft,
+    scrollTop = window.scrollY || document.documentElement.scrollTop;
+    scrollLeft = window.scrollX || document.documentElement.scrollLeft,
 
         window.onscroll = function () {
             window.scrollTo(scrollLeft, scrollTop);
@@ -110,6 +123,8 @@ function enableScroll() {
     window.onscroll = function () { };
 }
 
+/********************************************************************************* */
+
 const days = document.querySelectorAll('days');
 const hours = document.querySelectorAll('hours');
 const minutes = document.querySelectorAll('minutes');
@@ -117,7 +132,7 @@ const seconds = document.querySelectorAll('seconds');
 
 const currentYear = new Date().getFullYear();
 
-const newYearTime = new Date("Jan 5, 2024 15:37:25").getTime();
+const newYearTime = new Date("Dec 31, 2024 00:00:00").getTime();
 
 function updateCountdown() {
     const currentTime = new Date().getTime();
@@ -135,3 +150,27 @@ function updateCountdown() {
 }
 
 setInterval(updateCountdown, 1000);
+
+/*********************************************************** */
+
+const parent = document.getElementById('header-bar');
+const component = document.getElementById('search-tab');
+const background = document.getElementById("overLay");
+
+function closeComponent() {
+    component.style.visibility = 'hidden';
+    component.style.opacity = '0';
+    background.style.display = "none";
+}
+
+document.addEventListener('click', function (event) {
+    const isClickInsideComponent = parent.contains(event.target) || event.target === parent;
+
+    if (!isClickInsideComponent) {
+        closeComponent();
+    }
+});
+
+// document.addEventListener('DOMContentLoaded', function () {
+//     openComponent();
+// });

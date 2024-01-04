@@ -16,7 +16,6 @@
     <link rel="stylesheet" href="header.css">
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="footer.css">
-    <!-- <link rel="stylesheet" href="header-umino.css"> -->
 
     <script src="https://kit.fontawesome.com/82f8c9310a.js"
         crossorigin="anonymous"></script>
@@ -26,317 +25,252 @@
 </head>
 
 <body>
-    <header class="header position-sticky top-0">
-        <div class="header-bar vstack">
-            <div class="for-help-wrapper container-fluid">
-                <div
-                    class="for-help d-flex justify-content-between align-items-center d-none d-lg-flex">
+    <header class="header top-0">
+        <div class="header-bar vstack position-relative"
+            id="header-bar">
+            <div class="for-help-wrapper">
+                <div class="container-fluid">
                     <div
-                        class="header-info hstack flex-wrap color-white">
-                        <p class="hotline fs-13">
-                            Need
-                            Help? +222-1800-2628</p>
-                        <p class="email-address fs-13">
-                            blueskytechcompany@gmail.com</p>
-                    </div>
-                    <div
-                        class="header-dropmenu hstack flex-wrap">
-                        <a href="#"
-                            class="our-store text-decoration-none pl-25 color-white fs-13">Our
-                            Stores</a>
-                        <!-- <div class="language dropdown">
-                            <a class="btn" href="#"
-                                role="button"
-                                id="dropdownMenuLink"
-                                data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                English
-                                <svg width="10" height="5"
-                                    viewBox="0 0 10 5"
-                                    fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M1.08984 1.32227C0.971354 1.21289 0.912109 1.08073 0.912109 0.925781C0.912109 0.761719 0.971354 0.620443 1.08984 0.501953C1.19922 0.392578 1.33594 0.337891 1.5 0.337891C1.66406 0.337891 1.80078 0.392578 1.91016 0.501953L5 3.5918L8.08984 0.501953C8.19922 0.392578 8.33594 0.337891 8.5 0.337891C8.66406 0.337891 8.80078 0.392578 8.91016 0.501953C9.02865 0.620443 9.08789 0.761719 9.08789 0.925781C9.08789 1.08073 9.02865 1.21289 8.91016 1.32227L5.41016 4.82227C5.30078 4.94076 5.16406 5 5 5C4.83594 5 4.69922 4.94076 4.58984 4.82227L1.08984 1.32227Z"
-                                        fill="#ffffff" />
-                                </svg>
-                            </a>
-
-                            <ul class="dropdown-menu dropdown-menu-header"
-                                aria-labelledby="dropdownMenuLink">
-                                <li><a class="dropdown-item"
-                                        href="#">Japanese</a>
-                                </li>
-                                <li><a class="dropdown-item"
-                                        href="#">Netherland</a>
-                                </li>
-                                <li><a class="dropdown-item"
-                                        href="#">French</a>
-                                </li>
-                            </ul>
-                        </div>
-
-                        <div class="currency dropdown">
-                            <a class="btn" href="#"
-                                role="button"
-                                id="dropdownMenuLink"
-                                data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                United States (USD)
-                                <svg width="10" height="5"
-                                    viewBox="0 0 10 5"
-                                    fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M1.08984 1.32227C0.971354 1.21289 0.912109 1.08073 0.912109 0.925781C0.912109 0.761719 0.971354 0.620443 1.08984 0.501953C1.19922 0.392578 1.33594 0.337891 1.5 0.337891C1.66406 0.337891 1.80078 0.392578 1.91016 0.501953L5 3.5918L8.08984 0.501953C8.19922 0.392578 8.33594 0.337891 8.5 0.337891C8.66406 0.337891 8.80078 0.392578 8.91016 0.501953C9.02865 0.620443 9.08789 0.761719 9.08789 0.925781C9.08789 1.08073 9.02865 1.21289 8.91016 1.32227L5.41016 4.82227C5.30078 4.94076 5.16406 5 5 5C4.83594 5 4.69922 4.94076 4.58984 4.82227L1.08984 1.32227Z"
-                                        fill="#ffffff" />
-                                </svg>
-
-                            </a>
-
-                            <ul class="dropdown-menu dropdown-menu-header"
-                                aria-labelledby="dropdownMenuLink"
-                                style="min-width: 16rem;">
-                                <li><a class="dropdown-item"
-                                        href="#">Japan
-                                        (JPY)</a>
-                                </li>
-                                <li><a class="dropdown-item"
-                                        href="#">France
-                                        (EUR)</a>
-                                </li>
-                                <li><a class="dropdown-item"
-                                        href="#">United
-                                        Kingdom
-                                        (GBP)</a>
-                                </li>
-                            </ul>
-                        </div> -->
-
+                        class="for-help d-flex justify-content-between align-items-center d-none d-lg-flex">
                         <div
-                            class="language btn-group dropdown">
-                            <button type="button"
-                                class="btn"
-                                data-bs-toggle="dropdown"
-                                aria-haspopup="true"
-                                aria-expanded="false">
-                                English
-                                <svg width="10" height="5"
-                                    viewBox="0 0 10 5"
-                                    fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M1.08984 1.32227C0.971354 1.21289 0.912109 1.08073 0.912109 0.925781C0.912109 0.761719 0.971354 0.620443 1.08984 0.501953C1.19922 0.392578 1.33594 0.337891 1.5 0.337891C1.66406 0.337891 1.80078 0.392578 1.91016 0.501953L5 3.5918L8.08984 0.501953C8.19922 0.392578 8.33594 0.337891 8.5 0.337891C8.66406 0.337891 8.80078 0.392578 8.91016 0.501953C9.02865 0.620443 9.08789 0.761719 9.08789 0.925781C9.08789 1.08073 9.02865 1.21289 8.91016 1.32227L5.41016 4.82227C5.30078 4.94076 5.16406 5 5 5C4.83594 5 4.69922 4.94076 4.58984 4.82227L1.08984 1.32227Z"
-                                        fill="#ffffff" />
-                                </svg>
-
-                            </button>
-                            <ul class="dropdown-menu dropdown-menu-right"
-                                style="min-width: 15vh;">
-                                <li><a href="#">English</a>
-                                </li>
-                                <li><a
-                                        href="#">Netherland</a>
-                                </li>
-                                <li><a href="#">French</a>
-                                </li>
-                            </ul>
+                            class="header-info hstack flex-wrap color-white">
+                            <p class="hotline fs-13">
+                                Need
+                                Help? +222-1800-2628</p>
+                            <p class="email-address fs-13">
+                                blueskytechcompany@gmail.com
+                            </p>
                         </div>
                         <div
-                            class="currency btn-group dropdown">
-                            <button type="button"
-                                class="btn"
-                                data-bs-toggle="dropdown"
-                                aria-haspopup="true"
-                                aria-expanded="false">
-                                United States (USD)
-                                <svg width="10" height="5"
-                                    viewBox="0 0 10 5"
-                                    fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M1.08984 1.32227C0.971354 1.21289 0.912109 1.08073 0.912109 0.925781C0.912109 0.761719 0.971354 0.620443 1.08984 0.501953C1.19922 0.392578 1.33594 0.337891 1.5 0.337891C1.66406 0.337891 1.80078 0.392578 1.91016 0.501953L5 3.5918L8.08984 0.501953C8.19922 0.392578 8.33594 0.337891 8.5 0.337891C8.66406 0.337891 8.80078 0.392578 8.91016 0.501953C9.02865 0.620443 9.08789 0.761719 9.08789 0.925781C9.08789 1.08073 9.02865 1.21289 8.91016 1.32227L5.41016 4.82227C5.30078 4.94076 5.16406 5 5 5C4.83594 5 4.69922 4.94076 4.58984 4.82227L1.08984 1.32227Z"
-                                        fill="#ffffff" />
-                                </svg>
-                            </button>
-                            <ul class="dropdown-menu dropdown-menu-right"
-                                style="min-width: 22vh;">
-                                <li><a href="#">Japan
-                                        (JPY)</a>
-                                </li>
-                                <li><a href="#">France
-                                        (EUR)</a>
-                                </li>
-                                <li><a href="#">United
-                                        Kingdom
-                                        (GBP)</a></li>
-                            </ul>
+                            class="header-dropmenu hstack flex-wrap">
+                            <a href="#"
+                                class="our-store text-decoration-none pl-25 color-white fs-13">Our
+                                Stores</a>
+                            <div
+                                class="language btn-group dropdown">
+                                <button type="button"
+                                    class="btn"
+                                    data-bs-toggle="dropdown"
+                                    aria-haspopup="true"
+                                    aria-expanded="false">
+                                    English
+                                    <svg width="10"
+                                        height="5"
+                                        viewBox="0 0 10 5"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M1.08984 1.32227C0.971354 1.21289 0.912109 1.08073 0.912109 0.925781C0.912109 0.761719 0.971354 0.620443 1.08984 0.501953C1.19922 0.392578 1.33594 0.337891 1.5 0.337891C1.66406 0.337891 1.80078 0.392578 1.91016 0.501953L5 3.5918L8.08984 0.501953C8.19922 0.392578 8.33594 0.337891 8.5 0.337891C8.66406 0.337891 8.80078 0.392578 8.91016 0.501953C9.02865 0.620443 9.08789 0.761719 9.08789 0.925781C9.08789 1.08073 9.02865 1.21289 8.91016 1.32227L5.41016 4.82227C5.30078 4.94076 5.16406 5 5 5C4.83594 5 4.69922 4.94076 4.58984 4.82227L1.08984 1.32227Z"
+                                            fill="#ffffff" />
+                                    </svg>
+
+                                </button>
+                                <ul class="dropdown-menu dropdown-menu-right"
+                                    style="min-width: 15vh;">
+                                    <li><a
+                                            href="#">English</a>
+                                    </li>
+                                    <li><a
+                                            href="#">Netherland</a>
+                                    </li>
+                                    <li><a
+                                            href="#">French</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div
+                                class="currency btn-group dropdown">
+                                <button type="button"
+                                    class="btn"
+                                    data-bs-toggle="dropdown"
+                                    aria-haspopup="true"
+                                    aria-expanded="false">
+                                    United States (USD)
+                                    <svg width="10"
+                                        height="5"
+                                        viewBox="0 0 10 5"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M1.08984 1.32227C0.971354 1.21289 0.912109 1.08073 0.912109 0.925781C0.912109 0.761719 0.971354 0.620443 1.08984 0.501953C1.19922 0.392578 1.33594 0.337891 1.5 0.337891C1.66406 0.337891 1.80078 0.392578 1.91016 0.501953L5 3.5918L8.08984 0.501953C8.19922 0.392578 8.33594 0.337891 8.5 0.337891C8.66406 0.337891 8.80078 0.392578 8.91016 0.501953C9.02865 0.620443 9.08789 0.761719 9.08789 0.925781C9.08789 1.08073 9.02865 1.21289 8.91016 1.32227L5.41016 4.82227C5.30078 4.94076 5.16406 5 5 5C4.83594 5 4.69922 4.94076 4.58984 4.82227L1.08984 1.32227Z"
+                                            fill="#ffffff" />
+                                    </svg>
+                                </button>
+                                <ul class="dropdown-menu dropdown-menu-right"
+                                    style="min-width: 22vh;">
+                                    <li><a href="#">Japan
+                                            (JPY)</a>
+                                    </li>
+                                    <li><a href="#">France
+                                            (EUR)</a>
+                                    </li>
+                                    <li><a href="#">United
+                                            Kingdom
+                                            (GBP)</a></li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div class="search-bar-wrapper container-fluid">
-                <div
-                    class="search-bar d-flex flex-row flex-wrap">
-                    <div class="menu-toggle d-xl-none">
-                        <a href="javascript:void(0)"
-                            onclick="openNav();on();disableScroll()"
-                            class="color-white">
-                            <!-- <svg xmlns="http://www.w3.org/2000/svg"
-                                width="27" height="27"
-                                fill="#111111"
-                                class="bi bi-list"
-                                viewBox="2.3 2 14 12">
-                                <path fill-rule="evenodd"
-                                    d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
-                            </svg> -->
-                            <img src="media/burger-white.svg"
-                                alt="hamburger"
-                                style="width: 2.8rem; height: 2.8rem;">
-                        </a>
-                    </div>
-
-                    <div class="brand">
-                        <a class="d-flex flex-wrap justify-content-center"
-                            href="#">
-                            <img src="media/brand.svg"
-                                class="image-brand"
-                                alt="Umilux brand icon">
-                        </a>
-                    </div>
-
+            <div
+                class="search-bar-wrapper position-relative">
+                <div class="container-fluid">
                     <div
-                        class="utilities hstack justify-content-end">
-                        <a
-                            class="login hstack align-items-center d-none d-lg-flex gap-3 text-decoration-none">
-                            <!-- <img src="media/icon-user.svg"
-                                class="icon-user"
-                                alt="Login icon"> -->
-                            <svg xmlns="http://www.w3.org/2000/svg"
-                                width="23" height="23"
-                                viewBox="0 0 23 23"
-                                fill="none"
-                                class="icon-user">
-                                <path
-                                    d="M22.8548 21.3335C21.6915 19.3657 20.0317 17.7342 18.0398 16.6007C16.0478 15.4671 13.7928 14.8708 11.4979 14.8708C9.20304 14.8708 6.94798 15.4671 4.95601 16.6007C2.96405 17.7342 1.30427 19.3657 0.141025 21.3335C-0.00138538 21.5887 -0.0376415 21.8893 0.0400248 22.1708C0.0766559 22.3141 0.143667 22.4481 0.236568 22.5636C0.329469 22.6791 0.446115 22.7735 0.578691 22.8406C0.74972 22.937 0.943214 22.987 1.1398 22.9857C1.33475 22.9939 1.52817 22.9482 1.69855 22.8536C1.86893 22.759 2.0096 22.6192 2.10491 22.4498C3.06783 20.8199 4.44211 19.4686 6.09163 18.5296C7.74115 17.5907 9.60864 17.0968 11.5091 17.0968C13.4096 17.0968 15.2771 17.5907 16.9266 18.5296C18.5761 19.4686 19.9504 20.8199 20.9133 22.4498C21.0632 22.7033 21.3076 22.8877 21.5934 22.9629C21.8792 23.0382 22.1832 22.9982 22.4396 22.8517C22.5672 22.784 22.6791 22.6904 22.768 22.577C22.8569 22.4635 22.9209 22.3327 22.9558 22.1931C22.9973 22.0503 23.0098 21.9008 22.9924 21.7532C22.9751 21.6056 22.9283 21.4629 22.8548 21.3335Z"
-                                    fill="white" />
-                                <path
-                                    d="M11.5 13.8C13.3083 13.8003 15.0444 13.0842 16.3348 11.8057C17.6253 10.5272 18.3668 8.78854 18.4 6.96384C18.4 5.11691 17.673 3.34563 16.379 2.03966C15.085 0.733688 13.33 0 11.5 0C9.66998 0 7.91494 0.733688 6.62094 2.03966C5.32694 3.34563 4.59998 5.11691 4.59998 6.96384C4.63313 8.78854 5.3747 10.5272 6.66512 11.8057C7.95555 13.0842 9.69169 13.8003 11.5 13.8ZM6.89998 6.96384C6.89998 5.73255 7.38462 4.5517 8.24728 3.68105C9.10995 2.8104 10.28 2.32128 11.5 2.32128C12.72 2.32128 13.89 2.8104 14.7527 3.68105C15.6153 4.5517 16.1 5.73255 16.1 6.96384C16.1 8.19512 15.6153 9.37597 14.7527 10.2466C13.89 11.1173 12.72 11.6064 11.5 11.6064C10.28 11.6064 9.10995 11.1173 8.24728 10.2466C7.38462 9.37597 6.89998 8.19512 6.89998 6.96384Z"
-                                    fill="white" />
-                            </svg>
-                            <span
-                                class="login-note d-flex flex-column">
-                                <p class="login-text fs-11">
-                                    Login</p>
-                                <p
-                                    class="login-account fs-14">
-                                    Account</p>
-                            </span>
-                        </a>
+                        class="search-bar d-flex flex-row flex-wrap">
+                        <div class="menu-toggle d-xl-none">
+                            <a href="javascript:void(0)"
+                                onclick="openNav();on();disableScroll()"
+                                class="color-white">
+                                <img src="media/burger-white.svg"
+                                    alt="hamburger"
+                                    style="width: 2.8rem; height: 2.8rem;">
+                            </a>
+                        </div>
 
-                        <a href="#"
-                            class="wish-list d-none d-lg-flex">
-                            <div class="position-relative">
-                                <!-- <img src="media/icon-wishlist.svg"
-                                    class="icon-wish-list"
-                                    alt="Wish list"> -->
+                        <div class="brand">
+                            <a class="d-flex flex-wrap justify-content-center"
+                                href="#">
+                                <img src="media/brand.svg"
+                                    class="image-brand"
+                                    alt="Umilux brand icon">
+                            </a>
+                        </div>
+
+                        <div
+                            class="utilities hstack justify-content-end">
+                            <a
+                                class="login hstack align-items-center d-none d-lg-flex gap-3 text-decoration-none">
                                 <svg xmlns="http://www.w3.org/2000/svg"
-                                    width="28" height="23"
-                                    viewBox="0 0 28 23"
+                                    width="23" height="23"
+                                    viewBox="0 0 23 23"
                                     fill="none"
-                                    class="icon-wish-list">
+                                    class="icon-user">
                                     <path
-                                        d="M25.7442 2.10275C24.2909 0.752316 22.3676 0 20.3687 0C18.3697 0 16.4465 0.752316 14.9931 2.10275L14 3.0345L13.0069 2.10275C11.5572 0.743159 9.62821 -0.0103607 7.62554 0.000636744C5.62664 -0.00860296 3.7019 0.744876 2.25576 2.10275C1.54386 2.75756 0.976298 3.54931 0.588263 4.42889C0.200228 5.30847 0 6.25712 0 7.216C0 8.17488 0.200228 9.12353 0.588263 10.0031C0.976298 10.8827 1.54386 11.6744 2.25576 12.3293L13.2147 22.6921C13.3222 22.7846 13.4428 22.8612 13.5727 22.9194C13.8471 23.0269 14.1529 23.0269 14.4273 22.9194C14.5572 22.8612 14.6778 22.7846 14.7853 22.6921L25.7442 12.3293C26.4561 11.6744 27.0237 10.8827 27.4117 10.0031C27.7998 9.12353 28 8.17488 28 7.216C28 6.25712 27.7998 5.30847 27.4117 4.42889C27.0237 3.54931 26.4561 2.75756 25.7442 2.10275ZM25.7442 7.19327C25.7475 7.86547 25.6121 8.53132 25.3461 9.15048C25.0801 9.76963 24.6891 10.3292 24.1968 10.7953L14 20.4536L3.81473 10.7953C3.31485 10.3331 2.91647 9.77502 2.64415 9.15553C2.37183 8.53604 2.23134 7.86823 2.23134 7.19327C2.23134 6.51832 2.37183 5.85051 2.64415 5.23102C2.91647 4.61153 3.31485 4.05348 3.81473 3.59127C4.84037 2.62701 6.20703 2.09319 7.62554 2.10275C9.05112 2.09206 10.4254 2.62562 11.4595 3.59127L13.2147 5.2616C13.3222 5.3541 13.4428 5.43066 13.5727 5.48886C13.8471 5.59638 14.1529 5.59638 14.4273 5.48886C14.5572 5.43066 14.6778 5.3541 14.7853 5.2616L16.5521 3.59127C17.5777 2.62701 18.9444 2.09319 20.3629 2.10275C21.7885 2.09206 23.1628 2.62562 24.1968 3.59127C24.6933 4.0554 25.0886 4.6141 25.3586 5.23335C25.6286 5.8526 25.7676 6.51944 25.7673 7.19327H25.7442Z"
+                                        d="M22.8548 21.3335C21.6915 19.3657 20.0317 17.7342 18.0398 16.6007C16.0478 15.4671 13.7928 14.8708 11.4979 14.8708C9.20304 14.8708 6.94798 15.4671 4.95601 16.6007C2.96405 17.7342 1.30427 19.3657 0.141025 21.3335C-0.00138538 21.5887 -0.0376415 21.8893 0.0400248 22.1708C0.0766559 22.3141 0.143667 22.4481 0.236568 22.5636C0.329469 22.6791 0.446115 22.7735 0.578691 22.8406C0.74972 22.937 0.943214 22.987 1.1398 22.9857C1.33475 22.9939 1.52817 22.9482 1.69855 22.8536C1.86893 22.759 2.0096 22.6192 2.10491 22.4498C3.06783 20.8199 4.44211 19.4686 6.09163 18.5296C7.74115 17.5907 9.60864 17.0968 11.5091 17.0968C13.4096 17.0968 15.2771 17.5907 16.9266 18.5296C18.5761 19.4686 19.9504 20.8199 20.9133 22.4498C21.0632 22.7033 21.3076 22.8877 21.5934 22.9629C21.8792 23.0382 22.1832 22.9982 22.4396 22.8517C22.5672 22.784 22.6791 22.6904 22.768 22.577C22.8569 22.4635 22.9209 22.3327 22.9558 22.1931C22.9973 22.0503 23.0098 21.9008 22.9924 21.7532C22.9751 21.6056 22.9283 21.4629 22.8548 21.3335Z"
+                                        fill="white" />
+                                    <path
+                                        d="M11.5 13.8C13.3083 13.8003 15.0444 13.0842 16.3348 11.8057C17.6253 10.5272 18.3668 8.78854 18.4 6.96384C18.4 5.11691 17.673 3.34563 16.379 2.03966C15.085 0.733688 13.33 0 11.5 0C9.66998 0 7.91494 0.733688 6.62094 2.03966C5.32694 3.34563 4.59998 5.11691 4.59998 6.96384C4.63313 8.78854 5.3747 10.5272 6.66512 11.8057C7.95555 13.0842 9.69169 13.8003 11.5 13.8ZM6.89998 6.96384C6.89998 5.73255 7.38462 4.5517 8.24728 3.68105C9.10995 2.8104 10.28 2.32128 11.5 2.32128C12.72 2.32128 13.89 2.8104 14.7527 3.68105C15.6153 4.5517 16.1 5.73255 16.1 6.96384C16.1 8.19512 15.6153 9.37597 14.7527 10.2466C13.89 11.1173 12.72 11.6064 11.5 11.6064C10.28 11.6064 9.10995 11.1173 8.24728 10.2466C7.38462 9.37597 6.89998 8.19512 6.89998 6.96384Z"
                                         fill="white" />
                                 </svg>
                                 <span
-                                    class="badge position-absolute d-inline-flex align-items-center justify-content-center translate-middle badge bg-primary">
-                                    0
-                                    <span
-                                        class="visually-hidden">products</span>
+                                    class="login-note d-flex flex-column">
+                                    <p
+                                        class="login-text fs-11">
+                                        Login</p>
+                                    <p
+                                        class="login-account fs-14">
+                                        Account</p>
                                 </span>
-                            </div>
-                        </a>
+                            </a>
 
-                        <a
-                            class="cart hstack align-items-center d-flex gap-3 text-decoration-none">
-                            <div class="position-relative"
-                                style="margin-right: .8rem;">
-                                <!-- <img src="media/icon-cart.svg"
+                            <a href="#"
+                                class="wish-list d-none d-lg-flex">
+                                <div
+                                    class="position-relative">
+                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                        width="28"
+                                        height="23"
+                                        viewBox="0 0 28 23"
+                                        fill="none"
+                                        class="icon-wish-list">
+                                        <path
+                                            d="M25.7442 2.10275C24.2909 0.752316 22.3676 0 20.3687 0C18.3697 0 16.4465 0.752316 14.9931 2.10275L14 3.0345L13.0069 2.10275C11.5572 0.743159 9.62821 -0.0103607 7.62554 0.000636744C5.62664 -0.00860296 3.7019 0.744876 2.25576 2.10275C1.54386 2.75756 0.976298 3.54931 0.588263 4.42889C0.200228 5.30847 0 6.25712 0 7.216C0 8.17488 0.200228 9.12353 0.588263 10.0031C0.976298 10.8827 1.54386 11.6744 2.25576 12.3293L13.2147 22.6921C13.3222 22.7846 13.4428 22.8612 13.5727 22.9194C13.8471 23.0269 14.1529 23.0269 14.4273 22.9194C14.5572 22.8612 14.6778 22.7846 14.7853 22.6921L25.7442 12.3293C26.4561 11.6744 27.0237 10.8827 27.4117 10.0031C27.7998 9.12353 28 8.17488 28 7.216C28 6.25712 27.7998 5.30847 27.4117 4.42889C27.0237 3.54931 26.4561 2.75756 25.7442 2.10275ZM25.7442 7.19327C25.7475 7.86547 25.6121 8.53132 25.3461 9.15048C25.0801 9.76963 24.6891 10.3292 24.1968 10.7953L14 20.4536L3.81473 10.7953C3.31485 10.3331 2.91647 9.77502 2.64415 9.15553C2.37183 8.53604 2.23134 7.86823 2.23134 7.19327C2.23134 6.51832 2.37183 5.85051 2.64415 5.23102C2.91647 4.61153 3.31485 4.05348 3.81473 3.59127C4.84037 2.62701 6.20703 2.09319 7.62554 2.10275C9.05112 2.09206 10.4254 2.62562 11.4595 3.59127L13.2147 5.2616C13.3222 5.3541 13.4428 5.43066 13.5727 5.48886C13.8471 5.59638 14.1529 5.59638 14.4273 5.48886C14.5572 5.43066 14.6778 5.3541 14.7853 5.2616L16.5521 3.59127C17.5777 2.62701 18.9444 2.09319 20.3629 2.10275C21.7885 2.09206 23.1628 2.62562 24.1968 3.59127C24.6933 4.0554 25.0886 4.6141 25.3586 5.23335C25.6286 5.8526 25.7676 6.51944 25.7673 7.19327H25.7442Z"
+                                            fill="white" />
+                                    </svg>
+                                    <span
+                                        class="badge position-absolute d-inline-flex align-items-center justify-content-center translate-middle badge bg-primary">
+                                        0
+                                        <span
+                                            class="visually-hidden">products</span>
+                                    </span>
+                                </div>
+                            </a>
+
+                            <a
+                                class="cart hstack align-items-center d-flex gap-3 text-decoration-none">
+                                <div class="position-relative"
+                                    style="margin-right: .8rem;">
+                                    <!-- <img src="media/icon-cart.svg"
                                     class="icon-cart"
                                     alt="Your cart"> -->
-                                <svg xmlns="http://www.w3.org/2000/svg"
-                                    width="27" height="23"
-                                    viewBox="0 0 27 23"
-                                    fill="none"
-                                    class="icon-cart">
-                                    <path
-                                        d="M19.3593 20.7192C19.064 20.7192 18.7807 20.6017 18.5719 20.3924C18.3631 20.1832 18.2458 19.8994 18.2458 19.6035H16.0187C16.0187 20.4912 16.3706 21.3426 16.9971 21.9703C17.6236 22.598 18.4733 22.9506 19.3593 22.9506C20.2453 22.9506 21.095 22.598 21.7215 21.9703C22.348 21.3426 22.6999 20.4912 22.6999 19.6035H20.4729C20.4729 19.8994 20.3555 20.1832 20.1467 20.3924C19.9379 20.6017 19.6546 20.7192 19.3593 20.7192Z"
-                                        fill="white" />
-                                    <path
-                                        d="M11.5234 20.7192C11.2281 20.7192 10.9449 20.6017 10.736 20.3924C10.5272 20.1832 10.4099 19.8994 10.4099 19.6035H8.17236C8.17236 20.0437 8.2589 20.4796 8.42702 20.8863C8.59515 21.2929 8.84158 21.6625 9.15224 21.9737C9.4629 22.285 9.83171 22.5319 10.2376 22.7003C10.6435 22.8688 11.0785 22.9555 11.5179 22.9555C11.9572 22.9555 12.3922 22.8688 12.7981 22.7003C13.204 22.5319 13.5728 22.285 13.8835 21.9737C14.1942 21.6625 14.4406 21.2929 14.6087 20.8863C14.7768 20.4796 14.8634 20.0437 14.8634 19.6035H12.6363C12.6363 19.8993 12.5191 20.183 12.3104 20.3922C12.1017 20.6014 11.8187 20.719 11.5234 20.7192V20.7192Z"
-                                        fill="white" />
-                                    <path
-                                        d="M26.0504 2.26008C25.9897 2.24973 25.9282 2.2446 25.8666 2.24474H8.04992C7.75459 2.24474 7.47135 2.36229 7.26252 2.57152C7.05369 2.78075 6.93637 3.06453 6.93637 3.36043C6.93637 3.65633 7.05369 3.94012 7.26252 4.14935C7.47135 4.35858 7.75459 4.47613 8.04992 4.47613H24.552L24.2576 6.24589L22.6965 15.6331H8.17032L4.38427 6.24589L2.12586 0.695325C2.00643 0.434207 1.79109 0.229299 1.52466 0.123255C1.25824 0.0172112 0.961258 0.0182024 0.695545 0.126022C0.429832 0.233842 0.215858 0.440183 0.0981665 0.702092C-0.0195254 0.964001 -0.0318673 1.2613 0.0637099 1.53209L3.66951 10.397L6.13045 16.9321C6.31209 17.4823 6.68722 17.8644 7.22868 17.8644H23.6396C23.9032 17.8646 24.1584 17.7709 24.3597 17.6002C24.5609 17.4295 24.6951 17.1927 24.7385 16.9321L26.516 6.24589L26.9656 3.54383C27.0141 3.252 26.9449 2.95282 26.7733 2.71209C26.6017 2.47135 26.3416 2.30876 26.0504 2.26008V2.26008Z"
-                                        fill="white" />
-                                </svg>
-                                <span
-                                    class="badge position-absolute d-inline-flex align-items-center justify-content-center translate-middle badge bg-primary">
-                                    99+
+                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                        width="27"
+                                        height="23"
+                                        viewBox="0 0 27 23"
+                                        fill="none"
+                                        class="icon-cart">
+                                        <path
+                                            d="M19.3593 20.7192C19.064 20.7192 18.7807 20.6017 18.5719 20.3924C18.3631 20.1832 18.2458 19.8994 18.2458 19.6035H16.0187C16.0187 20.4912 16.3706 21.3426 16.9971 21.9703C17.6236 22.598 18.4733 22.9506 19.3593 22.9506C20.2453 22.9506 21.095 22.598 21.7215 21.9703C22.348 21.3426 22.6999 20.4912 22.6999 19.6035H20.4729C20.4729 19.8994 20.3555 20.1832 20.1467 20.3924C19.9379 20.6017 19.6546 20.7192 19.3593 20.7192Z"
+                                            fill="white" />
+                                        <path
+                                            d="M11.5234 20.7192C11.2281 20.7192 10.9449 20.6017 10.736 20.3924C10.5272 20.1832 10.4099 19.8994 10.4099 19.6035H8.17236C8.17236 20.0437 8.2589 20.4796 8.42702 20.8863C8.59515 21.2929 8.84158 21.6625 9.15224 21.9737C9.4629 22.285 9.83171 22.5319 10.2376 22.7003C10.6435 22.8688 11.0785 22.9555 11.5179 22.9555C11.9572 22.9555 12.3922 22.8688 12.7981 22.7003C13.204 22.5319 13.5728 22.285 13.8835 21.9737C14.1942 21.6625 14.4406 21.2929 14.6087 20.8863C14.7768 20.4796 14.8634 20.0437 14.8634 19.6035H12.6363C12.6363 19.8993 12.5191 20.183 12.3104 20.3922C12.1017 20.6014 11.8187 20.719 11.5234 20.7192V20.7192Z"
+                                            fill="white" />
+                                        <path
+                                            d="M26.0504 2.26008C25.9897 2.24973 25.9282 2.2446 25.8666 2.24474H8.04992C7.75459 2.24474 7.47135 2.36229 7.26252 2.57152C7.05369 2.78075 6.93637 3.06453 6.93637 3.36043C6.93637 3.65633 7.05369 3.94012 7.26252 4.14935C7.47135 4.35858 7.75459 4.47613 8.04992 4.47613H24.552L24.2576 6.24589L22.6965 15.6331H8.17032L4.38427 6.24589L2.12586 0.695325C2.00643 0.434207 1.79109 0.229299 1.52466 0.123255C1.25824 0.0172112 0.961258 0.0182024 0.695545 0.126022C0.429832 0.233842 0.215858 0.440183 0.0981665 0.702092C-0.0195254 0.964001 -0.0318673 1.2613 0.0637099 1.53209L3.66951 10.397L6.13045 16.9321C6.31209 17.4823 6.68722 17.8644 7.22868 17.8644H23.6396C23.9032 17.8646 24.1584 17.7709 24.3597 17.6002C24.5609 17.4295 24.6951 17.1927 24.7385 16.9321L26.516 6.24589L26.9656 3.54383C27.0141 3.252 26.9449 2.95282 26.7733 2.71209C26.6017 2.47135 26.3416 2.30876 26.0504 2.26008V2.26008Z"
+                                            fill="white" />
+                                    </svg>
                                     <span
-                                        class="visually-hidden">products</span>
+                                        class="badge position-absolute d-inline-flex align-items-center justify-content-center translate-middle badge bg-primary">
+                                        99+
+                                        <span
+                                            class="visually-hidden">products</span>
+                                    </span>
+                                </div>
+                                <span
+                                    class="cart-note d-none d-lg-flex flex-column">
+                                    <p
+                                        class="cart-text fs-11">
+                                        Cart</p>
+                                    <p
+                                        class="total-price fs-14">
+                                        $590.00</p>
                                 </span>
-                            </div>
-                            <span
-                                class="cart-note d-none d-lg-flex flex-column">
-                                <p class="cart-text fs-11">
-                                    Cart</p>
-                                <p
-                                    class="total-price fs-14">
-                                    $590.00</p>
-                            </span>
-                        </a>
-                    </div>
+                            </a>
+                        </div>
 
-                    <div
-                        class="search-input hstack align-items-center">
-                        <div class="position-relative"
-                            style="flex: 1;">
-                            <input
-                                class="position-relative fs-5"
-                                type="search"
-                                placeholder="I'm looking for..."
-                                value autocomplete="off">
+                        <div
+                            class="search-input hstack align-items-center">
+                            <div class="position-relative"
+                                style="flex: 1;">
+                                <input
+                                    class="position-relative fs-5"
+                                    type="search"
+                                    placeholder="I'm looking for..."
+                                    value autocomplete="off"
+                                    onclick="openSearch();">
+                                <div
+                                    class="icon-search position-absolute">
+                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                        width="24"
+                                        height="24"
+                                        viewBox="0 0 24 24"
+                                        fill="none"
+                                        stroke="#999999"
+                                        stroke-width="2"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <circle cx="11"
+                                            cy="11" r="8">
+                                        </circle>
+                                        <line x1="21"
+                                            y1="21"
+                                            x2="16.65"
+                                            y2="16.65">
+                                        </line>
+                                    </svg>
+                                </div>
 
-                            <div
-                                class="icon-search position-absolute">
-                                <svg xmlns="http://www.w3.org/2000/svg"
-                                    width="24" height="24"
-                                    viewBox="0 0 24 24"
-                                    fill="none"
-                                    stroke="#999999"
-                                    stroke-width="2"
-                                    stroke-linecap="round"
-                                    stroke-linejoin="round">
-                                    <circle cx="11" cy="11"
-                                        r="8">
-                                    </circle>
-                                    <line x1="21" y1="21"
-                                        x2="16.65"
-                                        y2="16.65">
-                                    </line>
-                                </svg>
-                            </div>
-
-                            <a class="search-button color-white
+                                <a class="search-button color-white
                     text-center text-decoration-none
                     position-absolute">Search</a>
+
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-
-            <div id="overLay"></div>
 
             <nav id="side-panel" class="side-panel vstack">
                 <div class="panel-header position-relative">
@@ -397,7 +331,7 @@
                                 class="none-decoration dropbtn"
                                 onclick="openSubNavProduct()">
                                 <span
-                                    class="d-flex flex-row justify-content-between align-item-center col-gap-5">
+                                    class="d-flex flex-row justify-content-between align-items-center col-gap-5">
                                     <span>Product</span>
                                     <i
                                         class="fa-solid fa-chevron-right"></i>
@@ -411,7 +345,7 @@
                                 class="none-decoration dropbtn"
                                 onclick="openSubNavPage()">
                                 <span
-                                    class="d-flex flex-row justify-content-between align-item-center col-gap-5">
+                                    class="d-flex flex-row justify-content-between align-items-center col-gap-5">
                                     <span>Page</span>
                                     <i
                                         class="fa-solid fa-chevron-right"></i>
@@ -425,7 +359,7 @@
                                 class="none-decoration dropbtn"
                                 onclick="openSubNavBlog()">
                                 <span
-                                    class="d-flex flex-row justify-content-between align-item-center">
+                                    class="d-flex flex-row justify-content-between align-items-center">
                                     <span>Blog</span>
                                     <i
                                         class="fa-solid fa-chevron-right"></i>
@@ -462,9 +396,385 @@
                 </span>
             </nav>
 
+            <div id="search-tab" class="search-tab">
+                <div
+                    class="container-search position-relative d-flex flex-column">
+                    <a href="javascript:void(0)"
+                        onclick="closeSearch(); enableScroll(); off()"
+                        class="icon-func position-absolute d-flex justify-content-end">
+                        <i class="fa-solid fa-xmark"
+                            style="color: var(--base-color); transform: translateX(-100%); font-size: 2rem;"></i>
+                    </a>
+
+                    <div class="quick-search d-flex flex-row justify-content-center align-items-center search-bar"
+                        style="padding: 0 1.5rem;">
+                        <span style="opacity: .7;">Quick
+                            Search:&nbsp;
+                        </span>
+                        <span>
+                            <a href="#"
+                                class="quick-search-option">Unlocked</a>,
+                            <a href="#"
+                                class="quick-search-option">Airpods</a>,
+                            <a href="#"
+                                class="quick-search-option">Speaker</a>
+                        </span>
+                    </div>
+
+                    <div class="d-flex flex-column nowrap catalog-search"
+                        style="overflow-y: scroll;">
+                        <p class="popular-product">Popular
+                            Products
+                        </p>
+                        <div
+                            class="d-flex flex-row flex-wrap">
+                            <div
+                                class="card-wrapper col-6 col-md-4 col-lg-2">
+                                <div class="card"
+                                    style="width: 100%;">
+                                    <div
+                                        class="position-relative overflow-hidden">
+                                        <img src="media/top-deal-1.svg"
+                                            class="card-img-top position-relative"
+                                            alt="Top deal 1">
+                                        <img src="media/top-deal-5.svg"
+                                            class="card-img-top position-absolute img-hover"
+                                            alt="Card Front">
+                                        <div
+                                            class="sale-block d-flex flex-column position-absolute">
+                                            <span
+                                                class="sale-block-item sale-off back-ground-blue">-15%</span>
+                                            <span
+                                                class="sale-block-item pre-order back-ground-orange">Pre-order</span>
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <p class="umilux">
+                                            UMILUX</p>
+                                        <p
+                                            class="top-deal-name card-text">
+                                            Galaxy
+                                            S21 Ultra 5G
+                                            128GB
+                                            Unlocked
+                                            International
+                                            Version
+                                        </p>
+                                        <div class="rating">
+                                            <span
+                                                class="fa fa-star checked"></span>
+                                            <span
+                                                class="fa fa-star checked"></span>
+                                            <span
+                                                class="fa fa-star checked"></span>
+                                            <span
+                                                class="fa fa-star checked"></span>
+                                            <span
+                                                class="fa fa-star checked"></span>
+                                        </div>
+                                        <p
+                                            class="sale-price">
+                                            $350.00
+                                            &nbsp;
+                                            <span
+                                                class="base-price text-decoration-line-through">$400.00
+                                            </span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div
+                                class="card-wrapper col-6 col-md-4 col-lg-2">
+                                <div class="card"
+                                    style="width: 100%;">
+                                    <div
+                                        class="position-relative overflow-hidden">
+                                        <img src="media/top-deal-2.svg"
+                                            class="card-img-top position-relative"
+                                            alt="Top deal 2">
+                                        <img src="media/top-deal-5.svg"
+                                            class="card-img-top position-absolute img-hover"
+                                            alt="Card Front">
+                                        <div
+                                            class="sale-block d-flex flex-column position-absolute">
+                                            <span
+                                                class="sale-block-item sale-off back-ground-blue">-15%</span>
+                                            <span
+                                                class="sale-block-item pre-order back-ground-orange">Pre-order</span>
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <p class="umilux">
+                                            UMILUX</p>
+                                        <p
+                                            class="top-deal-name card-text">
+                                            Galaxy
+                                            S21 Ultra 5G
+                                            128GB
+                                            Unlocked
+                                            International
+                                            Version
+                                        </p>
+                                        <div class="rating">
+                                            <span
+                                                class="fa fa-star checked"></span>
+                                            <span
+                                                class="fa fa-star checked"></span>
+                                            <span
+                                                class="fa fa-star checked"></span>
+                                            <span
+                                                class="fa fa-star checked"></span>
+                                            <span
+                                                class="fa fa-star checked"></span>
+                                        </div>
+                                        <p
+                                            class="sale-price">
+                                            $350.00
+                                            &nbsp;
+                                            <span
+                                                class="base-price text-decoration-line-through">$400.00
+                                            </span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div
+                                class="card-wrapper col-6 col-md-4 col-lg-2">
+                                <div class="card"
+                                    style="width: 100%;">
+                                    <div
+                                        class="position-relative overflow-hidden">
+                                        <img src="media/top-deal-3.svg"
+                                            class="card-img-top position-relative"
+                                            alt="Top deal 3">
+                                        <img src="media/top-deal-5.svg"
+                                            class="card-img-top position-absolute img-hover"
+                                            alt="Card Front">
+                                        <div
+                                            class="sale-block d-flex flex-column position-absolute">
+                                            <span
+                                                class="sale-block-item sale-off back-ground-blue">-15%</span>
+                                            <span
+                                                class="sale-block-item pre-order back-ground-orange">Pre-order</span>
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <p class="umilux">
+                                            UMILUX</p>
+                                        <p
+                                            class="top-deal-name card-text">
+                                            Galaxy
+                                            S21 Ultra 5G
+                                            128GB
+                                            Unlocked
+                                            International
+                                            Version
+                                        </p>
+                                        <div class="rating">
+                                            <span
+                                                class="fa fa-star checked"></span>
+                                            <span
+                                                class="fa fa-star checked"></span>
+                                            <span
+                                                class="fa fa-star checked"></span>
+                                            <span
+                                                class="fa fa-star checked"></span>
+                                            <span
+                                                class="fa fa-star checked"></span>
+                                        </div>
+                                        <p
+                                            class="sale-price">
+                                            $350.00
+                                            &nbsp;
+                                            <span
+                                                class="base-price text-decoration-line-through">$400.00
+                                            </span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div
+                                class="card-wrapper col-6 col-md-4 col-lg-2">
+                                <div class="card"
+                                    style="width: 100%;">
+                                    <div
+                                        class="position-relative overflow-hidden">
+                                        <img src="media/top-deal-4.svg"
+                                            class="card-img-top position-relative"
+                                            alt="Top deal 4">
+                                        <img src="media/top-deal-5.svg"
+                                            class="card-img-top position-absolute img-hover"
+                                            alt="Card Front">
+                                        <div
+                                            class="sale-block d-flex flex-column position-absolute">
+                                            <span
+                                                class="sale-block-item sale-off back-ground-blue">-15%</span>
+                                            <span
+                                                class="sale-block-item pre-order back-ground-orange">Pre-order</span>
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <p class="umilux">
+                                            UMILUX</p>
+                                        <p
+                                            class="top-deal-name card-text">
+                                            Galaxy
+                                            S21 Ultra 5G
+                                            128GB
+                                            Unlocked
+                                            International
+                                            Version
+                                        </p>
+
+                                        <div class="rating">
+                                            <span
+                                                class="fa fa-star checked"></span>
+                                            <span
+                                                class="fa fa-star checked"></span>
+                                            <span
+                                                class="fa fa-star checked"></span>
+                                            <span
+                                                class="fa fa-star checked"></span>
+                                            <span
+                                                class="fa fa-star checked"></span>
+                                        </div>
+                                        <p
+                                            class="sale-price">
+                                            $350.00
+                                            &nbsp;
+                                            <span
+                                                class="base-price text-decoration-line-through">$400.00
+                                            </span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div
+                                class="card-wrapper col-6 col-md-4 col-lg-2">
+                                <div class="card"
+                                    style="width: 100%;">
+                                    <div
+                                        class="position-relative overflow-hidden">
+                                        <img src="media/top-deal-5.svg"
+                                            class="card-img-top position-relative"
+                                            alt="Top deal 5">
+                                        <img src="media/top-deal-1.svg"
+                                            class="card-img-top position-absolute img-hover"
+                                            alt="Card Front">
+                                        <div
+                                            class="sale-block d-flex flex-column position-absolute">
+                                            <span
+                                                class="sale-block-item sale-off back-ground-blue">-15%</span>
+                                            <span
+                                                class="sale-block-item pre-order back-ground-orange">Pre-order</span>
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <p class="umilux">
+                                            UMILUX</p>
+                                        <p
+                                            class="top-deal-name card-text">
+                                            Galaxy
+                                            S21 Ultra 5G
+                                            128GB
+                                            Unlocked
+                                            International
+                                            Version
+                                        </p>
+                                        <div class="rating">
+                                            <span
+                                                class="fa fa-star checked"></span>
+                                            <span
+                                                class="fa fa-star checked"></span>
+                                            <span
+                                                class="fa fa-star checked"></span>
+                                            <span
+                                                class="fa fa-star checked"></span>
+                                            <span
+                                                class="fa fa-star checked"></span>
+                                        </div>
+                                        <p
+                                            class="sale-price">
+                                            $350.00
+                                            &nbsp;
+                                            <span
+                                                class="base-price text-decoration-line-through">$400.00
+                                            </span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div
+                                class="card-wrapper col-6 col-md-4 col-lg-2">
+                                <div class="card"
+                                    style="width: 100%;">
+                                    <div
+                                        class="position-relative overflow-hidden">
+                                        <img src="media/top-deal-5.svg"
+                                            class="card-img-top position-relative"
+                                            alt="Top deal 5">
+                                        <img src="media/top-deal-1.svg"
+                                            class="card-img-top position-absolute img-hover"
+                                            alt="Card Front">
+                                        <div
+                                            class="sale-block d-flex flex-column position-absolute">
+                                            <span
+                                                class="sale-block-item sale-off back-ground-blue">-15%</span>
+                                            <span
+                                                class="sale-block-item pre-order back-ground-orange">Pre-order</span>
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <p class="umilux">
+                                            UMILUX</p>
+                                        <p
+                                            class="top-deal-name card-text">
+                                            Galaxy
+                                            S21 Ultra 5G
+                                            128GB
+                                            Unlocked
+                                            International
+                                            Version
+                                        </p>
+                                        <div class="rating">
+                                            <span
+                                                class="fa fa-star checked"></span>
+                                            <span
+                                                class="fa fa-star checked"></span>
+                                            <span
+                                                class="fa fa-star checked"></span>
+                                            <span
+                                                class="fa fa-star checked"></span>
+                                            <span
+                                                class="fa fa-star checked"></span>
+                                        </div>
+                                        <p
+                                            class="sale-price">
+                                            $350.00
+                                            &nbsp;
+                                            <span
+                                                class="base-price text-decoration-line-through">$400.00
+                                            </span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
 
-        <div class="header-menu d-none d-xl-block">
+        <div id="overLay"></div>
+
+        <div
+            class="header-menu position-relative d-none d-xl-block">
             <div
                 class="vertical-menu d-flex flex-row container-fluid">
                 <div class="dropdown-menu-list d-flex">
@@ -558,7 +868,7 @@
                                         <div
                                             class="mega-menu-shop-item d-flex flex-column col-3">
                                             <h3 class=""
-                                                style="font-size: 1.6rem; font-weight: 500;">
+                                                style="font-size: 1.6rem; font-weight: 500; margin-bottom: 2rem;">
                                                 Shop
                                                 Layout
                                             </h3>
@@ -607,8 +917,8 @@
 
                                         <div
                                             class="mega-menu-shop-item d-flex flex-column col-3">
-                                            <h3 class="pb-20"
-                                                style="font-size: 1.6rem; font-weight: 500;">
+                                            <h3 class=""
+                                                style="font-size: 1.6rem; font-weight: 500; margin-bottom: 2rem;">
                                                 Shop
                                                 page
                                             </h3>
@@ -645,19 +955,20 @@
 
                                         <div
                                             class="mega-menu-shop-item mega-menu-image col-3">
-                                            <div class="hidden"
-                                                style="border-radius: 1rem;">
+                                            <div class="overflow-hidden"
+                                                style="border-radius: 1rem; width: 100%; height: fit-content;">
                                                 <a href="#/"
-                                                    class="relative">
+                                                    class="mega-image-link position-relative">
                                                     <div
-                                                        class="d-flex btn-second absolute absolute-side justify-content-center align-item-center">
-                                                        Tops
+                                                        class="mega-menu-button d-flex btn-second position-absolute absolute-side justify-content-center align-items-center">
+                                                        OLED/Smart
+                                                        TVs
                                                     </div>
                                                     <div
                                                         class=" d-block">
                                                         <img class="menu-image d-block"
-                                                            src="./media/top-trending-1.svg"
-                                                            alt="Model leans over"
+                                                            src="media/mega-menu-shop-1.jpg"
+                                                            alt=""
                                                             style="width: 100%; height: 100%;">
                                                     </div>
                                                 </a>
@@ -668,19 +979,19 @@
 
                                         <div
                                             class="mega-menu-shop-item mega-menu-image col-3">
-                                            <div class="hidden"
-                                                style="border-radius: 1rem;">
+                                            <div class="overflow-hidden"
+                                                style="border-radius: 1rem; width: 100%; height: fit-content;">
                                                 <a href="#/"
-                                                    class="relative">
+                                                    class="mega-image-link position-relative">
                                                     <div
-                                                        class="d-flex btn-second absolute absolute-side justify-content-center align-item-center">
-                                                        Tops
+                                                        class="mega-menu-button d-flex btn-second position-absolute absolute-side justify-content-center align-items-center">
+                                                        Macbook/PCs
                                                     </div>
                                                     <div
                                                         class="d-block">
                                                         <img class="menu-image d-block"
-                                                            src="./media/must-have-1.svg"
-                                                            alt="Model leans over"
+                                                            src="media/mega-menu-shop-2.jpg"
+                                                            alt=""
                                                             style="width: 100%; height: 100%;">
                                                     </div>
                                                 </a>
@@ -716,9 +1027,9 @@
                                     <div
                                         class="mega-product d-flex flex-row justify-content-center">
                                         <div
-                                            class="mega-menu-shop-item d-flex flex-column">
-                                            <h3 class="pb-20"
-                                                style="font-size: 1.6rem; font-weight: 500;">
+                                            class="mega-menu-shop-item d-flex flex-column col-2">
+                                            <h3 class=""
+                                                style="font-size: 1.6rem; font-weight: 500; margin-bottom: 2rem;">
                                                 Product
                                                 Layout
                                             </h3>
@@ -769,9 +1080,9 @@
                                             </ul>
                                         </div>
                                         <div
-                                            class="mega-menu-shop-item d-flex flex-column">
-                                            <h3 class="pb-20"
-                                                style="font-size: 1.6rem; font-weight: 500;">
+                                            class="mega-menu-shop-item d-flex flex-column col-2">
+                                            <h3 class=""
+                                                style="font-size: 1.6rem; font-weight: 500; margin-bottom: 2rem;">
                                                 Product
                                                 Features
                                             </h3>
@@ -829,22 +1140,27 @@
                                             </ul>
                                         </div>
                                         <div
-                                            class="mega-menu-shop-item d-flex flex-column">
-                                            <h3 class="pb-20"
-                                                style="font-size: 1.6rem; font-weight: 500;">
+                                            class="mega-menu-shop-item d-flex flex-column col-2">
+                                            <h3 class=""
+                                                style="font-size: 1.6rem; font-weight: 500; margin-bottom: 2rem;">
                                                 Product
                                                 Details
                                             </h3>
                                             <ul>
                                                 <li>
                                                     <div
-                                                        class="d-flex flex-row align-item-center gap-10">
+                                                        class="d-flex flex-row align-items-center gap-10">
                                                         <a
-                                                            href="">Real
-                                                            time
-                                                            visitor</a>
-                                                        <span
-                                                            class="new sticker">NEW</span>
+                                                            href="">
+                                                            <div>
+                                                                Real
+                                                                time
+                                                                visitor
+                                                                <span
+                                                                    class="new sticker">NEW
+                                                                </span>
+                                                            </div>
+                                                        </a>
                                                     </div>
                                                 </li>
                                                 <li>
@@ -894,9 +1210,9 @@
                                             </ul>
                                         </div>
                                         <div
-                                            class="mega-menu-shop-item d-flex flex-column">
-                                            <h3 class="pb-20"
-                                                style="font-size: 1.6rem; font-weight: 500;">
+                                            class="mega-menu-shop-item d-flex flex-column col-2">
+                                            <h3 class=""
+                                                style="font-size: 1.6rem; font-weight: 500; margin-bottom: 2rem;">
                                                 Thumbnails
                                                 Position
                                             </h3>
@@ -958,21 +1274,26 @@
                                             </ul>
                                         </div>
                                         <div
-                                            class="mega-menu-shop-item d-flex flex-column">
-                                            <h3 class="pb-20"
-                                                style="font-size: 1.6rem; font-weight: 500;">
+                                            class="mega-menu-shop-item d-flex flex-column col-2">
+                                            <h3 class=""
+                                                style="font-size: 1.6rem; font-weight: 500; margin-bottom: 2rem;">
                                                 Boot
                                                 Sale
                                             </h3>
                                             <ul>
                                                 <li>
                                                     <div
-                                                        class="d-flex-row align-item-center gap-10">
+                                                        class="d-flex flex-row align-items-center">
                                                         <a
-                                                            href="">Countdown
-                                                            timers</a>
-                                                        <span
-                                                            class="hot sticker align-item-center">HOT</span>
+                                                            href="">
+                                                            <div>
+                                                                Countdown
+                                                                timers
+                                                                <span
+                                                                    class="hot sticker">HOT</span>
+                                                            </div>
+                                                        </a>
+
                                                     </div>
                                                 </li>
                                                 <li>
@@ -992,16 +1313,38 @@
                                                         sticky</a>
                                                 </li>
                                                 <li>
-                                                    <a
-                                                        href="">Frequently
-                                                        bought
-                                                        together</a>
+                                                    <div
+                                                        class="d-flex flex-row align-items-center">
+                                                        <a
+                                                            href="">
+                                                            <div
+                                                                class="mega-link">
+                                                                Frequently
+                                                                bought
+                                                                together
+                                                                <span
+                                                                    class="new sticker">NEW
+                                                                </span>
+                                                            </div>
+                                                        </a>
+                                                    </div>
                                                 </li>
                                                 <li>
-                                                    <a
-                                                        href="">Advanced
-                                                        Custom
-                                                        Fields</a>
+                                                    <div
+                                                        class="d-flex flex-row align-items-center">
+                                                        <a
+                                                            href="">
+                                                            <div
+                                                                class="mega-link">
+                                                                Advanced
+                                                                Custom
+                                                                Fields
+                                                                <span
+                                                                    class="hot sticker">HOT
+                                                                </span>
+                                                            </div>
+                                                        </a>
+                                                    </div>
                                                 </li>
                                                 <li>
                                                     <a
@@ -1009,17 +1352,28 @@
                                                         guide</a>
                                                 </li>
                                                 <li>
-                                                    <a
-                                                        href="">Dynamic
-                                                        checkout
-                                                        buttons</a>
+                                                    <div
+                                                        class="d-flex flex-row align-items-center">
+                                                        <a
+                                                            href="">
+                                                            <div
+                                                                class="mega-link">
+                                                                Dynamic
+                                                                checkout
+                                                                buttons
+                                                                <span
+                                                                    class="new sticker">NEW
+                                                                </span>
+                                                            </div>
+                                                        </a>
+                                                    </div>
                                                 </li>
                                             </ul>
                                         </div>
                                         <div
-                                            class="mega-menu-shop-item d-flex flex-column">
-                                            <h3 class="pb-20"
-                                                style="font-size: 1.6rem; font-weight: 500;">
+                                            class="mega-menu-shop-item d-flex flex-column col-2">
+                                            <h3 class=""
+                                                style="font-size: 1.6rem; font-weight: 500; margin-bottom: 2rem;">
                                                 Product
                                                 Types
                                             </h3>
@@ -1273,7 +1627,6 @@
         </div>
     </header>
 
-
     <main>
         <div id="carousel-slider"
             class="carousel-slider carousel slide"
@@ -1391,7 +1744,7 @@
                                     $69
                                 </p>
                                 <div
-                                    class="banner-title d-flex-column row-gap-10">
+                                    class="banner-title d-flex flex-column row-gap-10">
                                     <span>
                                         <div
                                             class="continuous text-decoration-none color-white">
@@ -1418,7 +1771,7 @@
                                     $559
                                 </p>
                                 <div
-                                    class="banner-title d-flex-column row-gap-10">
+                                    class="banner-title d-flex flex-column row-gap-10">
                                     <span>
                                         <div
                                             class="continuous text-decoration-none color-white">
@@ -1444,7 +1797,7 @@
                                     $159
                                 </p>
                                 <div
-                                    class="banner-title d-flex-column row-gap-10">
+                                    class="banner-title d-flex flex-column row-gap-10">
                                     <span>
                                         <div
                                             class="continuous text-decoration-none color-white">
@@ -2069,7 +2422,7 @@
                             <div class="card"
                                 style="width: 100%;">
                                 <div
-                                    class="position-relative">
+                                    class="position-relative overflow-hidden">
                                     <img src="media/top-deal-1.svg"
                                         class="card-img-top position-relative"
                                         alt="Top deal 1">
@@ -2147,8 +2500,8 @@
                                     </div>
                                 </div>
                                 <div class="card-body">
-                                    <p class="toshiba">
-                                        TOSHIBA</p>
+                                    <p class="umilux">
+                                        UMILUX</p>
                                     <p
                                         class="top-deal-name card-text">
                                         Galaxy
@@ -2158,9 +2511,6 @@
                                         International
                                         Version
                                     </p>
-                                    <!-- <img src="media/rate.svg"
-                                        alt="Rating"
-                                        style="margin-bottom: 1rem;"> -->
                                     <div class="rating">
                                         <span
                                             class="fa fa-star checked"></span>
@@ -2189,7 +2539,7 @@
                             <div class="card"
                                 style="width: 100%;">
                                 <div
-                                    class="position-relative">
+                                    class="position-relative overflow-hidden">
                                     <img src="media/top-deal-2.svg"
                                         class="card-img-top position-relative"
                                         alt="Top deal 2">
@@ -2267,8 +2617,8 @@
                                     </div>
                                 </div>
                                 <div class="card-body">
-                                    <p class="toshiba">
-                                        TOSHIBA</p>
+                                    <p class="umilux">
+                                        UMILUX</p>
                                     <p
                                         class="top-deal-name card-text">
                                         Galaxy
@@ -2309,7 +2659,7 @@
                             <div class="card"
                                 style="width: 100%;">
                                 <div
-                                    class="position-relative">
+                                    class="position-relative overflow-hidden">
                                     <img src="media/top-deal-3.svg"
                                         class="card-img-top position-relative"
                                         alt="Top deal 3">
@@ -2387,8 +2737,8 @@
                                     </div>
                                 </div>
                                 <div class="card-body">
-                                    <p class="toshiba">
-                                        TOSHIBA</p>
+                                    <p class="umilux">
+                                        UMILUX</p>
                                     <p
                                         class="top-deal-name card-text">
                                         Galaxy
@@ -2429,7 +2779,7 @@
                             <div class="card"
                                 style="width: 100%;">
                                 <div
-                                    class="position-relative">
+                                    class="position-relative overflow-hidden">
                                     <img src="media/top-deal-4.svg"
                                         class="card-img-top position-relative"
                                         alt="Top deal 4">
@@ -2507,8 +2857,8 @@
                                     </div>
                                 </div>
                                 <div class="card-body">
-                                    <p class="toshiba">
-                                        TOSHIBA</p>
+                                    <p class="umilux">
+                                        UMILUX</p>
                                     <p
                                         class="top-deal-name card-text">
                                         Galaxy
@@ -2549,7 +2899,7 @@
                             <div class="card"
                                 style="width: 100%;">
                                 <div
-                                    class="position-relative">
+                                    class="position-relative overflow-hidden">
                                     <img src="media/top-deal-5.svg"
                                         class="card-img-top position-relative"
                                         alt="Top deal 5">
@@ -2627,8 +2977,8 @@
                                     </div>
                                 </div>
                                 <div class="card-body">
-                                    <p class="toshiba">
-                                        TOSHIBA</p>
+                                    <p class="umilux">
+                                        UMILUX</p>
                                     <p
                                         class="top-deal-name card-text">
                                         Galaxy
@@ -2723,8 +3073,8 @@
                                                         <div
                                                             class="card-body">
                                                             <p
-                                                                class="toshiba">
-                                                                TOSHIBA
+                                                                class="umilux">
+                                                                UMILUX
                                                             </p>
                                                             <p
                                                                 class="top-deal-name card-text">
@@ -2781,8 +3131,8 @@
                                                         <div
                                                             class="card-body">
                                                             <p
-                                                                class="toshiba">
-                                                                TOSHIBA
+                                                                class="umilux">
+                                                                UMILUX
                                                             </p>
                                                             <p
                                                                 class="top-deal-name card-text">
@@ -2845,8 +3195,8 @@
                                                         <div
                                                             class="card-body">
                                                             <p
-                                                                class="toshiba">
-                                                                TOSHIBA
+                                                                class="umilux">
+                                                                UMILUX
                                                             </p>
                                                             <p
                                                                 class="top-deal-name card-text">
@@ -2903,8 +3253,8 @@
                                                         <div
                                                             class="card-body">
                                                             <p
-                                                                class="toshiba">
-                                                                TOSHIBA
+                                                                class="umilux">
+                                                                UMILUX
                                                             </p>
                                                             <p
                                                                 class="top-deal-name card-text">
@@ -2967,8 +3317,8 @@
                                                         <div
                                                             class="card-body">
                                                             <p
-                                                                class="toshiba">
-                                                                TOSHIBA
+                                                                class="umilux">
+                                                                UMILUX
                                                             </p>
                                                             <p
                                                                 class="top-deal-name card-text">
@@ -3025,8 +3375,8 @@
                                                         <div
                                                             class="card-body">
                                                             <p
-                                                                class="toshiba">
-                                                                TOSHIBA
+                                                                class="umilux">
+                                                                UMILUX
                                                             </p>
                                                             <p
                                                                 class="top-deal-name card-text">
@@ -3137,8 +3487,8 @@
                                                         <div
                                                             class="card-body">
                                                             <p
-                                                                class="toshiba">
-                                                                TOSHIBA
+                                                                class="umilux">
+                                                                UMILUX
                                                             </p>
                                                             <p
                                                                 class="top-deal-name card-text">
@@ -3195,8 +3545,8 @@
                                                         <div
                                                             class="card-body">
                                                             <p
-                                                                class="toshiba">
-                                                                TOSHIBA
+                                                                class="umilux">
+                                                                UMILUX
                                                             </p>
                                                             <p
                                                                 class="top-deal-name card-text">
@@ -3253,8 +3603,8 @@
                                                         <div
                                                             class="card-body">
                                                             <p
-                                                                class="toshiba">
-                                                                TOSHIBA
+                                                                class="umilux">
+                                                                UMILUX
                                                             </p>
                                                             <p
                                                                 class="top-deal-name card-text">
@@ -3317,8 +3667,8 @@
                                                         <div
                                                             class="card-body">
                                                             <p
-                                                                class="toshiba">
-                                                                TOSHIBA
+                                                                class="umilux">
+                                                                UMILUX
                                                             </p>
                                                             <p
                                                                 class="top-deal-name card-text">
@@ -3375,8 +3725,8 @@
                                                         <div
                                                             class="card-body">
                                                             <p
-                                                                class="toshiba">
-                                                                TOSHIBA
+                                                                class="umilux">
+                                                                UMILUX
                                                             </p>
                                                             <p
                                                                 class="top-deal-name card-text">
@@ -3433,8 +3783,8 @@
                                                         <div
                                                             class="card-body">
                                                             <p
-                                                                class="toshiba">
-                                                                TOSHIBA
+                                                                class="umilux">
+                                                                UMILUX
                                                             </p>
                                                             <p
                                                                 class="top-deal-name card-text">
@@ -3534,8 +3884,8 @@
                                             <div
                                                 class="card-body">
                                                 <p
-                                                    class="toshiba">
-                                                    TOSHIBA
+                                                    class="umilux">
+                                                    UMILUX
                                                 </p>
                                                 <p
                                                     class="top-deal-name card-text">
@@ -3592,8 +3942,8 @@
                                             <div
                                                 class="card-body">
                                                 <p
-                                                    class="toshiba">
-                                                    TOSHIBA
+                                                    class="umilux">
+                                                    UMILUX
                                                 </p>
                                                 <p
                                                     class="top-deal-name card-text">
@@ -3650,8 +4000,8 @@
                                             <div
                                                 class="card-body">
                                                 <p
-                                                    class="toshiba">
-                                                    TOSHIBA
+                                                    class="umilux">
+                                                    UMILUX
                                                 </p>
                                                 <p
                                                     class="top-deal-name card-text">
@@ -3708,8 +4058,8 @@
                                             <div
                                                 class="card-body">
                                                 <p
-                                                    class="toshiba">
-                                                    TOSHIBA
+                                                    class="umilux">
+                                                    UMILUX
                                                 </p>
                                                 <p
                                                     class="top-deal-name card-text">
@@ -3766,8 +4116,8 @@
                                             <div
                                                 class="card-body">
                                                 <p
-                                                    class="toshiba">
-                                                    TOSHIBA
+                                                    class="umilux">
+                                                    UMILUX
                                                 </p>
                                                 <p
                                                     class="top-deal-name card-text">
@@ -3824,8 +4174,8 @@
                                             <div
                                                 class="card-body">
                                                 <p
-                                                    class="toshiba">
-                                                    TOSHIBA
+                                                    class="umilux">
+                                                    UMILUX
                                                 </p>
                                                 <p
                                                     class="top-deal-name card-text">
@@ -3904,7 +4254,7 @@
                             <div class="card"
                                 style="width: 100%;">
                                 <div
-                                    class="position-relative">
+                                    class="position-relative overflow-hidden">
                                     <img src="media/recommended-1.svg"
                                         class="card-img-top position-relative"
                                         alt="Recommended 1">
@@ -3982,8 +4332,8 @@
                                     </div>
                                 </div>
                                 <div class="card-body">
-                                    <p class="toshiba">
-                                        TOSHIBA</p>
+                                    <p class="umilux">
+                                        UMILUX</p>
                                     <p
                                         class="top-deal-name card-text">
                                         Galaxy
@@ -4024,7 +4374,7 @@
                             <div class="card"
                                 style="width: 100%;">
                                 <div
-                                    class="position-relative">
+                                    class="position-relative overflow-hidden">
                                     <img src="media/recommended-2.svg"
                                         class="card-img-top position-relative"
                                         alt="Recommended 2">
@@ -4102,8 +4452,8 @@
                                     </div>
                                 </div>
                                 <div class="card-body">
-                                    <p class="toshiba">
-                                        TOSHIBA</p>
+                                    <p class="umilux">
+                                        UMILUX</p>
                                     <p
                                         class="top-deal-name card-text">
                                         Galaxy
@@ -4144,7 +4494,7 @@
                             <div class="card"
                                 style="width: 100%;">
                                 <div
-                                    class="position-relative">
+                                    class="position-relative overflow-hidden">
                                     <img src="media/recommended-3.svg"
                                         class="card-img-top position-relative"
                                         alt="Recommended 3">
@@ -4222,8 +4572,8 @@
                                     </div>
                                 </div>
                                 <div class="card-body">
-                                    <p class="toshiba">
-                                        TOSHIBA</p>
+                                    <p class="umilux">
+                                        UMILUX</p>
                                     <p
                                         class="top-deal-name card-text">
                                         Galaxy
@@ -4264,7 +4614,7 @@
                             <div class="card"
                                 style="width: 100%;">
                                 <div
-                                    class="position-relative">
+                                    class="position-relative overflow-hidden">
                                     <img src="media/recommended-4.svg"
                                         class="card-img-top position-relative"
                                         alt="Recommended 4">
@@ -4342,8 +4692,8 @@
                                     </div>
                                 </div>
                                 <div class="card-body">
-                                    <p class="toshiba">
-                                        TOSHIBA</p>
+                                    <p class="umilux">
+                                        UMILUX</p>
                                     <p
                                         class="top-deal-name card-text">
                                         Galaxy
@@ -4384,7 +4734,7 @@
                             <div class="card"
                                 style="width: 100%;">
                                 <div
-                                    class="position-relative">
+                                    class="position-relative overflow-hidden">
                                     <img src="media/recommended-5.svg"
                                         class="card-img-top position-relative"
                                         alt="Recommended 5">
@@ -4462,8 +4812,8 @@
                                     </div>
                                 </div>
                                 <div class="card-body">
-                                    <p class="toshiba">
-                                        TOSHIBA</p>
+                                    <p class="umilux">
+                                        UMILUX</p>
                                     <p
                                         class="top-deal-name card-text">
                                         Galaxy
@@ -4603,7 +4953,7 @@
             <div class="shipping-wrapper container-fluid">
                 <div class="shipping d-flex flex-wrap">
                     <div
-                        class="shipping-service fast-delivery d-flex flex-column justify-content-center align-items-center col-12 col-sm-6 col-lg-3">
+                        class="shipping-service fast-delivery position-relative d-flex flex-column justify-content-center align-items-center col-12 col-sm-6 col-lg-3">
                         <img src="media/icon-delivery.svg"
                             alt="fast delivery"
                             class="shipping-image">
@@ -4613,7 +4963,7 @@
                         <p>Deliver in 24 hours max!</p>
                     </div>
                     <div
-                        class="shipping-service safe-payment d-flex flex-column justify-content-center align-items-center col-12 col-sm-6 col-lg-3">
+                        class="shipping-service safe-payment position-relative d-flex flex-column justify-content-center align-items-center col-12 col-sm-6 col-lg-3">
                         <img src="media/icon-payment.svg"
                             alt="safe payment"
                             class="shipping-image">
@@ -4624,7 +4974,7 @@
                         </p>
                     </div>
                     <div
-                        class="shipping-service free-return d-flex flex-column justify-content-center align-items-center col-12 col-sm-6 col-lg-3">
+                        class="shipping-service free-return position-relative d-flex flex-column justify-content-center align-items-center col-12 col-sm-6 col-lg-3">
                         <img src="media/icon-free-return.svg"
                             alt="free return"
                             class="shipping-image">
@@ -4716,6 +5066,31 @@
                                 </div>
                                 <div
                                     class="tooltip-icon d-flex flex-row">
+
+                                    <button type="button"
+                                        class="btn btn-tooltip"
+                                        data-bs-toggle="tooltip"
+                                        data-bs-custom-class="text-fs"
+                                        data-bs-placement="bottom"
+                                        title="X">
+                                        <svg width="36"
+                                            height="36"
+                                            viewBox="0 0 36 36"
+                                            fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="18"
+                                                cy="18"
+                                                r="17.5"
+                                                stroke="#555555" />
+                                            <path
+                                                fill-rule="evenodd"
+                                                clip-rule="evenodd"
+                                                d="M15.9184 12H12.066L16.5298 18.6281L12 24H13.5877L17.2347 19.6747L20.1476 24H24L19.3764 17.1347L23.7059 12H22.1183L18.6714 16.0879L15.9184 12ZM17.4993 17.9239L14.2821 13.2286H15.2134L17.9508 17.2237L18.3878 17.8614L21.7755 22.8054H20.8442L17.9793 18.6242L17.4993 17.9239Z"
+                                                fill="#555555" />
+                                        </svg>
+
+                                    </button>
+
                                     <button type="button"
                                         class="btn btn-tooltip"
                                         data-bs-toggle="tooltip"
@@ -4781,29 +5156,7 @@
 
                                     </button>
 
-                                    <button type="button"
-                                        class="btn btn-tooltip"
-                                        data-bs-toggle="tooltip"
-                                        data-bs-custom-class="text-fs"
-                                        data-bs-placement="bottom"
-                                        title="X">
-                                        <svg width="36"
-                                            height="36"
-                                            viewBox="0 0 36 36"
-                                            fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <circle cx="18"
-                                                cy="18"
-                                                r="17.5"
-                                                stroke="#555555" />
-                                            <path
-                                                fill-rule="evenodd"
-                                                clip-rule="evenodd"
-                                                d="M15.9184 12H12.066L16.5298 18.6281L12 24H13.5877L17.2347 19.6747L20.1476 24H24L19.3764 17.1347L23.7059 12H22.1183L18.6714 16.0879L15.9184 12ZM17.4993 17.9239L14.2821 13.2286H15.2134L17.9508 17.2237L18.3878 17.8614L21.7755 22.8054H20.8442L17.9793 18.6242L17.4993 17.9239Z"
-                                                fill="#555555" />
-                                        </svg>
 
-                                    </button>
 
                                     <button type="button"
                                         class="btn btn-tooltip"
@@ -4845,6 +5198,30 @@
                             </div>
                             <div
                                 class="tooltip-icon d-flex flex-row d-none d-md-block">
+
+                                <button type="button"
+                                    class="btn btn-tooltip"
+                                    data-bs-toggle="tooltip"
+                                    data-bs-custom-class="text-fs"
+                                    data-bs-placement="bottom"
+                                    title="X">
+                                    <svg width="36"
+                                        height="36"
+                                        viewBox="0 0 36 36"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="18"
+                                            cy="18" r="17.5"
+                                            stroke="#555555" />
+                                        <path
+                                            fill-rule="evenodd"
+                                            clip-rule="evenodd"
+                                            d="M15.9184 12H12.066L16.5298 18.6281L12 24H13.5877L17.2347 19.6747L20.1476 24H24L19.3764 17.1347L23.7059 12H22.1183L18.6714 16.0879L15.9184 12ZM17.4993 17.9239L14.2821 13.2286H15.2134L17.9508 17.2237L18.3878 17.8614L21.7755 22.8054H20.8442L17.9793 18.6242L17.4993 17.9239Z"
+                                            fill="#555555" />
+                                    </svg>
+
+                                </button>
+
                                 <button type="button"
                                     class="btn btn-tooltip"
                                     data-bs-toggle="tooltip"
@@ -4902,29 +5279,6 @@
                                             stroke="#555555" />
                                         <path
                                             d="M24.9882 14.5648C24.8236 13.9529 24.3412 13.4706 23.7294 13.3058C22.6117 13 18.1411 13 18.1411 13C18.1411 13 13.6706 13 12.5529 13.2942C11.9529 13.4588 11.4587 13.953 11.2941 14.5648C11 15.6823 11 18 11 18C11 18 11 20.3294 11.2941 21.4352C11.4589 22.047 11.9411 22.5294 12.553 22.6941C13.6823 23 18.1412 23 18.1412 23C18.1412 23 22.6117 23 23.7294 22.7058C24.3413 22.5411 24.8236 22.0588 24.9884 21.447C25.2824 20.3294 25.2824 18.0118 25.2824 18.0118C25.2824 18.0118 25.2942 15.6823 24.9882 14.5648ZM16.7177 20.1412V15.8588L20.4353 18L16.7177 20.1412Z"
-                                            fill="#555555" />
-                                    </svg>
-
-                                </button>
-
-                                <button type="button"
-                                    class="btn btn-tooltip"
-                                    data-bs-toggle="tooltip"
-                                    data-bs-custom-class="text-fs"
-                                    data-bs-placement="bottom"
-                                    title="X">
-                                    <svg width="36"
-                                        height="36"
-                                        viewBox="0 0 36 36"
-                                        fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <circle cx="18"
-                                            cy="18" r="17.5"
-                                            stroke="#555555" />
-                                        <path
-                                            fill-rule="evenodd"
-                                            clip-rule="evenodd"
-                                            d="M15.9184 12H12.066L16.5298 18.6281L12 24H13.5877L17.2347 19.6747L20.1476 24H24L19.3764 17.1347L23.7059 12H22.1183L18.6714 16.0879L15.9184 12ZM17.4993 17.9239L14.2821 13.2286H15.2134L17.9508 17.2237L18.3878 17.8614L21.7755 22.8054H20.8442L17.9793 18.6242L17.4993 17.9239Z"
                                             fill="#555555" />
                                     </svg>
 
@@ -5386,7 +5740,7 @@
         src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
         crossorigin="anonymous"></script>
-    <script src="umilux.js"></script>
+    <script src="./umilux.js"></script>
 
 </body>
 
