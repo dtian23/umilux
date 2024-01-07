@@ -1,10 +1,10 @@
 :root {
     --bg-header: #253380;
-    --bg-second: #F1F3F7;
+    --bg-second: rgb(241, 243, 247);
     --whrite: #ffffff;
     --blakc: #111111;
     --grey: #999999;
-    --search-button: #00A2C2;
+    --search-button: rgb(0, 162, 194);
     --console: #332B3C;
     --camera: #6944E6;
     --deal: #DE3B62;
@@ -126,17 +126,26 @@ ul {
     padding: 0;
 }
 
-#overLay {
+#searchOverlay,
+#overLay,
+#menuOverlay {
     position: fixed;
-    display: none;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
     background-color: rgba(0, 0, 0, 0.5);
-    z-index: 10;
-    transition: all .4s;
+    transition: all .6s;
 }
+
+#searchOverlay,
+#overLay {
+    z-index: 10;
+}
+
+/* #menuOverlay {
+    z-index: 101;
+} */
 
 .container-fluid {
     --bs-gutter-x: 3rem;

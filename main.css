@@ -375,11 +375,28 @@
     padding: 1.25rem;
     margin-bottom: 1rem;
     border-radius: 50%;
-    background-color: #F1F3F7;
+    background-color: rgb(241, 243, 247);
     transition: all .6s;
 
     path {
         transition: all .4s;
+    }
+}
+
+.wish-select {
+    background-color: var(--bg-second);
+
+    path {
+        fill: var(--whrite);
+    }
+}
+
+.wish-selected {
+    /* background-color: var(--search-button); */
+    background-color: rgb(81, 189, 212);
+
+    path {
+        fill: var(--whrite);
     }
 }
 
@@ -389,7 +406,6 @@
     path {
         fill: var(--whrite);
     }
-
 }
 
 .icon-block-item svg {
