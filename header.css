@@ -780,8 +780,10 @@ input[type="search"] {
 }
 
 .mega-menu-home-item img {
-    width: 100%;
-    height: auto;
+    /* width: 100%; */
+    /* height: auto; */
+    width: 125px;
+    height: 90px;
     transition: all .4s;
 }
 
