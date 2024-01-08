@@ -934,7 +934,6 @@ input[type="search"] {
 }
 
 .fixed-mobile-nav {
-    display: flex;
     position: fixed;
     flex-wrap: nowrap;
     top: 90%;
@@ -944,6 +943,7 @@ input[type="search"] {
     background-color: var(--whrite);
     border-radius: 3rem;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    z-index: 90;
 }
 
 .sticker {

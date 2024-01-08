@@ -679,6 +679,7 @@
 .prev-wrapper,
 .next-wrapper {
     display: flex;
+    visibility: hidden;
     width: 6rem;
     height: 6rem;
     background-color: var(--whrite);
@@ -716,6 +717,11 @@
 
 .slider-text {
     cursor: context-menu;
+    max-width: 40rem;
+}
+
+.no-break {
+    white-space: nowrap;
 }
 
 @media only screen and (min-width: 425px) {
@@ -728,6 +734,19 @@
 @media only screen and (min-width: 576px) {
     .banner-text p {
         font-size: 3rem;
+    }
+
+    .next-wrapper,
+    .prev-wrapper {
+        visibility: visible;
+    }
+
+    .disable-br {
+        display: none;
+    }
+
+    .no-break-md {
+        white-space: nowrap;
     }
 }
 
@@ -745,6 +764,7 @@
     .top-selling-list .carousel-control-next {
         top: 89%;
     }
+
 }
 
 @media only screen and (min-width: 768px) and (max-width: 992px) {
@@ -797,6 +817,13 @@
     .top-deal-wrapper .card-wrapper,
     .recommended-list .card-wrapper {
         width: 20%;
+    }
+
+}
+
+@media only screen and (min-width: 1400px) {
+    .slider-text {
+        max-width: 55rem;
     }
 
 }
