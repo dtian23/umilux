@@ -52,6 +52,30 @@ body {
     overflow-x: hidden;
 }
 
+@font-face {
+    font-family: 'General Sans';
+    src: url('font/GeneralSans-Regular.otf') format('truetype');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'General Sans';
+    src: url('font/GeneralSans-Medium.otf') format('truetype');
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'General Sans';
+    src: url('font/GeneralSans-Semibold.otf') format('truetype');
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: 'General Sans';
+    src: url('font/GeneralSans-Bold.otf') format('truetype');
+    font-weight: 700;
+}
+
 body,
 input,
 textarea,
