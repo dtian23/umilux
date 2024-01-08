@@ -175,13 +175,17 @@
 
 .product-list-text>* {
     align-items: first baseline;
-    font-size: 1.4rem;
     font-weight: 500;
     margin: 0;
     color: var(--blakc);
 }
 
+.product-list-text p {
+    font-size: 1.3rem;
+}
+
 .product-list-text a {
+    font-size: 1.4rem;
     transition: all .4s;
 }
 
@@ -238,6 +242,7 @@
 
 .umilux {
     font-size: 1.2rem;
+    font-weight: 500;
     color: var(--secondary-text);
 }
 
@@ -247,6 +252,7 @@
 
 .sale-price {
     font-size: 1.8rem;
+    font-weight: 500;
     color: var(--search-button);
 }
 
@@ -424,12 +430,16 @@
     border-radius: 3rem;
     width: fit-content;
     font-size: 1.2rem;
+    font-weight: 500;
 }
+
+/* .sale-off {
+
+} */
 
 .pre-order {
     margin-top: .3rem;
     color: var(--blakc);
-    font-weight: 500;
 }
 
 .top-selling-wrapper {
@@ -450,6 +460,7 @@
 .recommended-text a {
     width: 30%;
     font-size: 1.4rem;
+    font-weight: 500;
     transition: all .6s;
 
     path {
@@ -479,6 +490,12 @@
 .countdown-timer {
     padding-left: .75rem;
     padding-right: .75rem;
+}
+
+.count-down>p {
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: var(--body-fashion);
 }
 
 .time {
@@ -575,12 +592,14 @@
     top: 93%;
 }
 
-.deal-and-promotion-list h5 {
+.deal-and-promotion-list h4 {
+    font-size: 1.6rem;
+    font-weight: 600;
     transition: all .4s;
 }
 
 .deal-and-promotion-list>*:hover {
-    h5 {
+    h4 {
         cursor: pointer;
         color: var(--search-button);
     }
@@ -646,8 +665,14 @@
     margin-top: 3rem;
 }
 
+.shipping-service h5 {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
 .shipping-service p {
     color: var(--body-fashion);
+    font-size: 1.4rem;
     font-weight: 500;
 }
 
@@ -722,6 +747,21 @@
 
 .no-break {
     white-space: nowrap;
+}
+
+.for-help,
+.search-bar,
+.vertical-menu,
+.type-of-shops,
+.image-list-wrapper,
+.top-deal,
+.top-selling,
+.recommended-for-you,
+.deal-and-promotion,
+.shipping,
+.footer-wrapper {
+    margin-left: -1.5rem;
+    margin-right: -1.5rem;
 }
 
 @media only screen and (min-width: 425px) {

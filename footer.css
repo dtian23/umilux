@@ -16,7 +16,7 @@
 }
 
 .sign-up-text h2 {
-    font-size: 2.4rem;
+    font-size: 2.8rem;
 }
 
 .sign-up-text p {
@@ -67,6 +67,7 @@
 }
 
 .information-menu-wrapper {
+    padding-top: 1.5rem;
     padding-bottom: 2rem;
 }
 
@@ -76,6 +77,12 @@
 
 .accordion-item {
     border: none;
+}
+
+.accordion-item h2,
+.accordion-item h3 {
+    font-size: 1.6rem;
+    font-weight: 600;
 }
 
 .accordion-item button,
@@ -105,9 +112,14 @@
 
 .accordion-body,
 .accordion-body p {
-    font-size: 1.4rem !important;
+    font-size: 1.4rem;
     font-weight: 500;
+    color: var(--body-fashion);
 }
+
+/* .accordion-body a {
+    color: var(--body-fashion);
+} */
 
 .phone-number {
     font-size: 2.2rem;
@@ -130,7 +142,7 @@
 }
 
 .footer-section {
-    font-weight: 600;
+    /* font-weight: 600; */
     padding: 0 0 1rem 0;
 }
 
@@ -155,7 +167,8 @@
 }
 
 .list-group-item a {
-    color: var(--bs-list-group-color);
+    /* color: var(--bs-list-group-color); */
+    color: var(--body-fashion);
     transition: all .6s ease;
 }
 
@@ -170,7 +183,9 @@
 .choose-language>*,
 .choose-currency>* {
     font-size: 1.4rem;
-    color: var(--blakc);
+    font-weight: 500;
+    /* color: var(--blakc); */
+    color: var(--body-fashion);
 }
 
 .choose-language .dropdown-menu,
@@ -208,8 +223,15 @@
     transition: all .4s ease;
 }
 
+.choose-language button,
+.choose-currency button {
+    gap: .8rem;
+}
+
 .footer-copy-right {
     font-size: 1.4rem;
+    font-weight: 500;
+    color: var(--body-fashion);
 }
 
 .footer-payment img {
