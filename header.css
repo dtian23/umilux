@@ -51,8 +51,9 @@
 }
 
 #header {
-    position: relative;
+    position: sticky;
     transition: top .3s ease-out;
+    z-index: 100;
 }
 
 .sticky {

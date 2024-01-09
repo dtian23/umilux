@@ -220,10 +220,10 @@ h5 {
 
 @media only screen and (min-width: 1200px) {
 
-    .container-fluid {
+    /* .container-fluid {
         --bs-gutter-x: 6rem;
         --bs-gutter-y: 0;
-    }
+    } */
 
     .btn {
         padding-left: 0;

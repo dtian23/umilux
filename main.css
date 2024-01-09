@@ -14,7 +14,7 @@
 } */
 
 .main-body {
-    padding-top: 4rem;
+    /* padding-top: 4rem; */
     margin-left: -1.5rem;
     margin-right: -1.5rem;
 }
@@ -29,7 +29,8 @@
 }
 
 .part-gap {
-    padding: 2rem 0;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
 }
 
 .shop-wrapper {
@@ -265,7 +266,7 @@
     overflow-x: hidden;
 }
 
-.top-deal-header {
+.top-deal-header-inner {
     padding-bottom: 1.5rem;
     border-bottom: 1px solid var(--border-nav);
 }
@@ -358,7 +359,7 @@
     display: flex;
     flex-flow: column wrap;
     align-items: start;
-    padding: 1.5rem 0;
+    padding: 0;
 }
 
 .card-text {
@@ -446,10 +447,19 @@
     background-color: var(--bg-bold);
 }
 
-.top-selling-text,
-.recommended-text {
+.top-selling-text-inner,
+.recommended-text-inner {
+    padding-bottom: 1rem;
     border-bottom: 1px solid var(--border-nav);
 }
+
+/* .top-selling-text {
+    padding-bottom: 1rem;
+}
+
+.recommended-text-inner {
+    padding-bottom: 1.5rem;
+} */
 
 .top-selling-text h3,
 .recommended-text h3 {
@@ -477,7 +487,7 @@
     }
 }
 
-.top-deal-text,
+.top-deal-header,
 .top-selling-text,
 .recommended-text,
 .deal-and-promotion-text {
@@ -485,9 +495,8 @@
     padding-right: 1.5rem;
 }
 
-.count-down,
-.count-down>p,
-.countdown-timer {
+/* .count-down, */
+.count-down>p {
     padding-left: .75rem;
     padding-right: .75rem;
 }
@@ -517,11 +526,9 @@
     margin-right: .5rem;
 }
 
-.top-selling-list {
+/* .top-selling-list {
     padding-top: 3rem;
-    /* margin-left: -1.5rem;
-    margin-right: -1.5rem; */
-}
+} */
 
 /* .recommended-list {
     padding-top: 1.5rem;
@@ -595,6 +602,7 @@
 .deal-and-promotion-list h4 {
     font-size: 1.6rem;
     font-weight: 600;
+    padding-top: 2rem;
     transition: all .4s;
 }
 
@@ -624,8 +632,8 @@
     }
 }
 
-.deal-and-promotion-text {
-    /* padding-bottom: 1.5rem; */
+.deal-and-promotion-text h3 {
+    padding-bottom: 1.5rem;
     border-bottom: 1px solid var(--border-nav);
 }
 
@@ -645,6 +653,7 @@
 
 .promotion-text {
     color: var(--body-fashion);
+    padding-top: 1rem;
     font-size: 1.4rem;
     font-weight: 500;
 }
@@ -653,16 +662,15 @@
     width: 100%;
 } */
 
-.shipping-wrapper {
+.shipping {
+    padding-bottom: 4rem;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
     border-top: 1px solid var(--border-nav);
 }
 
-.shipping {
-    padding-bottom: 3rem;
-}
-
 .shipping-service {
-    margin-top: 3rem;
+    margin-top: 4rem;
 }
 
 .shipping-service h5 {
@@ -698,7 +706,7 @@
 .type-of-shops {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
-    margin-bottom: 3rem;
+    /* margin-bottom: 3rem; */
 }
 
 .prev-wrapper,
@@ -749,21 +757,6 @@
     white-space: nowrap;
 }
 
-.for-help,
-.search-bar,
-.vertical-menu,
-.type-of-shops,
-.image-list-wrapper,
-.top-deal,
-.top-selling,
-.recommended-for-you,
-.deal-and-promotion,
-.shipping,
-.footer-wrapper {
-    margin-left: -1.5rem;
-    margin-right: -1.5rem;
-}
-
 @media only screen and (min-width: 425px) {
 
     .banner-text {
@@ -811,7 +804,7 @@
     .deal-and-promotion-list .card-body {
         /* padding-left: 1.5rem;
         padding-right: 1.5rem; */
-        padding: 1.5rem;
+        padding: 3rem;
     }
 
     .deal-and-promotion-list .card-body {
@@ -821,7 +814,7 @@
 
 @media only screen and (min-width: 992px) {
     .part-gap {
-        padding: 3rem 0;
+        padding: 6rem 0;
     }
 
     .banner-text p {
@@ -866,4 +859,22 @@
         max-width: 55rem;
     }
 
+    /* .main-body {
+        padding-top: 6rem;
+    } */
+
+    /* .for-help,
+    .search-bar,
+    .vertical-menu,
+    .type-of-shops,
+    .image-list-wrapper,
+    .top-deal,
+    .top-selling,
+    .recommended-for-you,
+    .deal-and-promotion,
+    .shipping,
+    .footer-wrapper {
+        margin-left: -1.5rem;
+        margin-right: -1.5rem;
+    } */
 }

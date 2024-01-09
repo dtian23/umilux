@@ -1,6 +1,6 @@
 .sign-up-wrapper {
-    padding-top: 3rem;
-    padding-bottom: 3rem;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
 }
 
 .accordion {
@@ -67,8 +67,13 @@
 }
 
 .information-menu-wrapper {
-    padding-top: 1.5rem;
-    padding-bottom: 2rem;
+    /* padding-top: 1.5rem; */
+    padding-bottom: 3rem;
+}
+
+.information-menu {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
 }
 
 .accordion-body {
@@ -122,7 +127,8 @@
 } */
 
 .phone-number {
-    font-size: 2.2rem;
+    font-size: 3rem;
+    font-weight: 500;
     color: var(--search-button);
     margin-bottom: 1rem;
 }
@@ -161,7 +167,7 @@
 .list-group-item {
     /* padding-top: 0;
     padding-bottom: 1rem; */
-    padding: 0 0 1rem 0;
+    padding: 0 0 1.5rem 0;
     background-color: transparent;
     border: none;
 }
@@ -240,10 +246,18 @@
 }
 
 .footer-drop-wrapper {
+    /* padding-top: 1.5rem; */
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
     padding-bottom: 10vh;
 }
 
-.footer-drop-wrapper>* {
+.footer-drop-inner {
+    padding-top: 3rem;
+    border-top: 1px solid var(--border-nav);
+}
+
+.footer-drop-inner>* {
     margin-bottom: 1.5rem;
 }
 
