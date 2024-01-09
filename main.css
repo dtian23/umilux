@@ -230,7 +230,7 @@
 
 .carousel-product-list .carousel-control-prev,
 .carousel-product-list .carousel-control-next {
-    top: 71%;
+    top: 89%;
 }
 
 .carousel-control-prev {
@@ -278,6 +278,10 @@
     padding-left: 1.5rem;
     padding-right: 1.5rem;
 } */
+
+.recommended-for-you {
+    padding-top: 3rem;
+}
 
 .top-deal-text p {
     font-size: 1.4rem;
@@ -704,8 +708,8 @@
 }
 
 .type-of-shops {
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
     /* margin-bottom: 3rem; */
 }
 
@@ -815,6 +819,10 @@
 @media only screen and (min-width: 992px) {
     .part-gap {
         padding: 6rem 0;
+    }
+
+    .recommended-for-you {
+        padding-top: 6rem;
     }
 
     .banner-text p {
