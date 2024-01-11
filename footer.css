@@ -12,11 +12,12 @@
 }
 
 .sign-up-text {
-    padding-bottom: 2rem;
+    padding-bottom: 3rem;
 }
 
 .sign-up-text h2 {
     font-size: 2.8rem;
+    margin-bottom: 1rem;
 }
 
 .sign-up-text p {
@@ -71,10 +72,10 @@
     padding-bottom: 3rem;
 }
 
-.information-menu {
+/* .information-menu {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
-}
+} */
 
 .accordion-body {
     padding: 1rem 0;
@@ -131,6 +132,10 @@
     font-weight: 500;
     color: var(--search-button);
     margin-bottom: 1rem;
+}
+
+.phone-number:hover {
+    color: var(--search-button);
 }
 
 .tooltip-icon {
@@ -190,8 +195,6 @@
 .choose-currency>* {
     font-size: 1.4rem;
     font-weight: 500;
-    /* color: var(--blakc); */
-    color: var(--body-fashion);
 }
 
 .choose-language .dropdown-menu,
@@ -212,7 +215,8 @@
 
 .choose-language .dropdown-menu li a,
 .choose-currency .dropdown-menu li a {
-    color: var(--blakc);
+    /* color: var(--blakc); */
+    color: var(--body-fashion);
 }
 
 .btn-check:checked+.btn,
@@ -247,8 +251,8 @@
 
 .footer-drop-wrapper {
     /* padding-top: 1.5rem; */
-    padding-right: 1.5rem;
-    padding-left: 1.5rem;
+    /* padding-right: 1.5rem;
+    padding-left: 1.5rem; */
     padding-bottom: 10vh;
 }
 

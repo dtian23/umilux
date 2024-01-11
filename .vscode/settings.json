@@ -1,3 +1,18 @@
 {
-    "liveServer.settings.port": 5501
+  "liveServer.settings.port": 5501,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    // "editor.formatOnSave": true,
+    // "editor.codeActionsOnSave": {
+    //   "source.fixAll.html": true
+    // },
+    // "editor.tabSize": 2,
+    // "editor.wordWrap": "off",
+    // "editor.wrappingIndent": "indent"
+  },
+  "html.format.wrapAttributes": "force-aligned",
+  "html.format.wrapLineLength": 80,
+  "prettier.bracketSpacing": false
 }

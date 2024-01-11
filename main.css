@@ -100,7 +100,9 @@
 
 .product-list-image {
     flex: 1 0 auto;
-    padding: 1.5rem;
+    /* padding: 1.5rem; */
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
     align-items: center;
 
     img {
@@ -174,6 +176,9 @@
 
 .image-list-wrapper {
     display: flex;
+    gap: 3rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
 }
 
 .carousel-control-prev-icon,
@@ -198,7 +203,9 @@
 .umilux {
     font-size: 1.2rem;
     font-weight: 500;
-    color: var(--secondary-text);
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+    color: var(--grey);
 }
 
 .price {
@@ -234,7 +241,9 @@
 }
 
 .top-deal-name {
-    cursor: pointer;
+    /* cursor: pointer; */
+    text-decoration: none;
+    color: var(--blakc);
     transition: all .4s;
 }
 
@@ -307,7 +316,7 @@
     display: flex;
     flex-flow: column wrap;
     align-items: start;
-    padding: 0;
+    padding: 2rem 0 0 0;
 }
 
 .card-text {
@@ -328,9 +337,10 @@
 .icon-block-item {
     cursor: pointer;
     padding: 1.25rem;
-    margin-bottom: 1rem;
+    margin-bottom: .5rem;
     border-radius: 50%;
-    background-color: rgb(241, 243, 247);
+    background-color: var(--whrite);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     transition: all .6s;
 
     path {
@@ -339,7 +349,8 @@
 }
 
 .wish-select {
-    background-color: var(--bg-second);
+    /* background-color: var(--bg-second); */
+    background-color: var(--whrite);
 
     path {
         fill: var(--whrite);
@@ -347,7 +358,8 @@
 }
 
 .wish-selected {
-    background-color: rgb(81, 189, 212);
+    /* background-color: rgb(81, 189, 212); */
+    background-color: var(--search-button);
 
     path {
         fill: var(--whrite);
@@ -401,9 +413,15 @@
     width: 70%;
 }
 
+.top-selling-text span,
+.recommended-text span {
+    width: 30%;
+}
+
 .top-selling-text a,
 .recommended-text a {
-    width: 30%;
+    text-decoration: none;
+    color: var(--grey);
     font-size: 1.4rem;
     font-weight: 500;
     transition: all .6s;
@@ -512,7 +530,7 @@
 .deal-and-promotion-list h4 {
     font-size: 1.6rem;
     font-weight: 600;
-    padding-top: 2rem;
+    /* padding-top: 2rem; */
     transition: all .4s;
 }
 
