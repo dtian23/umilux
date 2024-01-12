@@ -361,7 +361,7 @@
 
             </div> -->
 
-            <div id="sub-nav-shop-layout" class="secondary-sub-nav-shop all-sub-nav d-flex flex-column">
+            <!-- <div id="sub-nav-shop-layout" class="secondary-sub-nav-shop all-sub-nav d-flex flex-column">
                 <div class="position-relative" style="color: var(--whrite); font-size: 1.8rem; text-align: center; padding: 1.5rem 3rem; margin: 0; background-color: var(--bg-header);">
                     <a href="#" aria-label="Back" style="border: none; padding: 0;" onclick="goBackSecondary()">
                         <i class="fa-solid fa-arrow-left position-absolute" style="color: #ffffff; left: 2rem; top: 50%; transform: translateY(-50%);"></i>
@@ -442,9 +442,9 @@
                         </li>
                     </ul>
                 </div>
-            </div>
+            </div> -->
 
-            <div id="sub-nav-shop-page" class="secondary-sub-nav-page all-sub-nav d-flex flex-column">
+            <!-- <div id="sub-nav-shop-page" class="secondary-sub-nav-page all-sub-nav d-flex flex-column">
                 <div class="position-relative" style="color: var(--whrite); font-size: 1.8rem; text-align: center; padding: 1.5rem 3rem; margin: 0; background-color: var(--bg-header);">
                     <a href="#" aria-label="Back" style="border: none; padding: 0;" onclick="goBackSecondary()">
                         <i class="fa-solid fa-arrow-left position-absolute" style="color: #ffffff; left: 2rem; top: 50%; transform: translateY(-50%);"></i>
@@ -504,9 +504,9 @@
                         </li>
                     </ul>
                 </div>
-            </div>
+            </div> -->
 
-            <div id="sub-nav-product" class="sub-nav-shop all-sub-nav d-flex flex-column">
+            <!-- <div id="sub-nav-product" class="sub-nav-shop all-sub-nav d-flex flex-column">
                 <div class="position-relative" style="color: var(--whrite); font-size: 1.8rem; text-align: center; padding: 1.5rem 3rem; margin: 0; background-color: var(--bg-header);">
                     <a href="#" aria-label="Back" style="border: none; padding: 0;" onclick="goBack()">
                         <i class="fa-solid fa-arrow-left position-absolute" style="color: #ffffff; left: 2rem; top: 50%; transform: translateY(-50%);"></i>
@@ -581,8 +581,8 @@
                         </li>
                     </ul>
                 </div>
-            </div>
-
+            </div> -->
+<!-- 
             <div id="sub-nav-product-1" class="secondary-sub-nav-item all-sub-nav d-flex flex-column">
                 <div class="position-relative" style="color: var(--whrite); font-size: 1.8rem; text-align: center; padding: 1.5rem 3rem; margin: 0; background-color: var(--bg-header);">
                     <a href="#" aria-label="Back" style="border: none; padding: 0;" onclick="goBackSecondary()">
@@ -1184,9 +1184,9 @@
                         </li>
                     </ul>
                 </div>
-            </div>
+            </div> -->
 
-            <div id="sub-nav-page" class="sub-nav-shop all-sub-nav d-flex flex-column">
+            <!-- <div id="sub-nav-page" class="sub-nav-shop all-sub-nav d-flex flex-column">
                 <div class="position-relative" style="color: var(--whrite); font-size: 1.8rem; text-align: center; padding: 1.5rem 3rem; margin: 0; background-color: var(--bg-header);">
                     <a href="#" aria-label="Back" style="border: none; padding: 0;" onclick="goBack()">
                         <i class="fa-solid fa-arrow-left position-absolute" style="color: #ffffff; left: 2rem; top: 50%; transform: translateY(-50%);"></i>
@@ -1267,7 +1267,7 @@
                     </ul>
                 </div>
 
-            </div>
+            </div> -->
 
             <div id="sub-nav-blog" class="sub-nav-shop all-sub-nav d-flex flex-column">
                 <div class="position-relative" style="color: var(--whrite); font-size: 1.8rem; text-align: center; padding: 1.5rem 3rem; margin: 0; background-color: var(--bg-header);">
@@ -1418,12 +1418,13 @@
 
                         <nav id="side-panel" class="side-panel">
                             <label class="toggle-close position-absolute" for="toggle">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                    <line x1="18" y1="6" x2="6" y2="18">
+                                <!-- <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"> -->
+                                    <!-- <line x1="18" y1="6" x2="6" y2="18">
                                     </line>
                                     <line x1="6" y1="6" x2="18" y2="18">
                                     </line>
-                                </svg>
+                                </svg> -->
+                                <i class="fa-solid fa-xmark position-absolute" style="color: #ffffff; right: 0; top: 2rem; font-size: 1.8rem"></i>
                             </label>
 
                             <div class="nav-content vstack">
@@ -1737,22 +1738,167 @@
                                             </div>
                             
                                             <div class="grow-fit" style="width: 32rem; overflow: hidden; position: relative;">
-                                                <ul id="sub-shop" class="sub-nav all-sub-nav position-absolute" style="padding-top: 1rem; z-index: 200; width: 100%;">
+                                                <ul id="sub-shop" class="sub-nav position-absolute" style="padding-top: 1rem; z-index: 200; width: 100%;">
                                                     <li class="sub-nav-item">
-                                                        <a href="#" aria-label="Shop layout" class="none-decoration dropbtn" onclick="openSubNavShopLayout()">
-                                                            <span class="d-flex flex-row justify-content-between align-items-center">
+                                                        <label for="nav-shop-layout" class="d-flex flex-row justify-content-between align-items-center">
+                                                            <span>Shop layout</span>
+                                                            <i class="fa-solid fa-chevron-right"></i>
+                                                        </label>
+
+                                                        <input type="checkbox" id="nav-shop-layout" class="d-none">
+                                                    
+                                                        <!-- <div id="sub-nav-shop-layout" class="secondary-sub-nav-shop d-flex flex-column">
+                                                            <div class="position-relative" style="color: var(--whrite); font-size: 1.8rem; text-align: center; padding: 1.5rem 3rem; margin: 0; background-color: var(--bg-header);">
+                                                                <label for="nav-shop">
+                                                                    <i class="fa-solid fa-arrow-left position-absolute" style="color: #ffffff; left: 2rem; top: 50%; transform: translateY(-50%);"></i>
+                                                                </label>
                                                                 <span>Shop layout</span>
-                                                                <i class="fa-solid fa-chevron-right"></i>
-                                                            </span>
-                                                        </a>
+                                                                <label for="toggle">
+                                                                    <i class="fa-solid fa-xmark position-absolute" style="color: #ffffff; right: 2rem; top: 50%; transform: translateY(-50%);"></i>
+                                                                </label>
+                                                            </div>
+                                            
+                                                            <div class="grow-fit" style="width: 32rem; overflow: hidden; position: relative;">
+                                                                <ul id="secondary-sub-shop-layout" class="secondary-sub-nav all-sub-nav position-absolute" style="padding-top: 1rem; z-index: 200; width: 100%;">
+                                                                    <li class="sub-nav-item">
+                                                                        <a href="#" aria-label="Filter left
+                                                                        sidebar" class="none-decoration dropbtn" onclick="">
+                                                                            <span class="d-flex flex-row justify-content-between align-items-center">
+                                                                                <span>
+                                                                                    Filter left sidebar
+                                                                                </span>
+                                                                            </span>
+                                                                        </a>
+                                                                    </li>
+                                                                    <li class="sub-nav-item">
+                                                                        <a href="#" aria-label="Filter right
+                                                                        sidebar" class="none-decoration dropbtn" onclick="">
+                                                                            <span class="d-flex flex-row justify-content-between align-items-center">
+                                                                                <span>
+                                                                                    Filter right sidebar
+                                                                                </span>
+                                                                            </span>
+                                                                        </a>
+                                                                    </li>
+                                                                    <li class="sub-nav-item">
+                                                                        <a href="#" aria-label="Canvas sidebar" class="none-decoration dropbtn" onclick="">
+                                                                            <span class="d-flex flex-row justify-content-between align-items-center">
+                                                                                <span>
+                                                                                    Canvas sidebar
+                                                                                </span>
+                                                                            </span>
+                                                                        </a>
+                                                                    </li>
+                                                                    <li class="sub-nav-item">
+                                                                        <a href="#" aria-label="Dropdown
+                                                                        sidebar" class="none-decoration dropbtn" onclick="">
+                                                                            <span class="d-flex flex-row justify-content-between align-items-center">
+                                                                                <span>
+                                                                                    Dropdown sidebar
+                                                                                </span>
+                                                                            </span>
+                                                                        </a>
+                                                                    </li>
+                                                                    <li class="sub-nav-item">
+                                                                        <a href="#" aria-label="Go" class="none-decoration dropbtn" onclick="">
+                                                                            <span class="d-flex flex-row justify-content-between align-items-center">
+                                                                                <span>
+                                                                                    Grid 2 columns
+                                                                                </span>
+                                                                            </span>
+                                                                        </a>
+                                                                    </li>
+                                                                    <li class="sub-nav-item">
+                                                                        <a href="#" aria-label="Go" class="none-decoration dropbtn" onclick="">
+                                                                            <span class="d-flex flex-row justify-content-between align-items-center">
+                                                                                <span>
+                                                                                    Grid 3 columns
+                                                                                </span>
+                                                                            </span>
+                                                                        </a>
+                                                                    </li>
+                                                                    <li class="sub-nav-item">
+                                                                        <a href="#" aria-label="Go" class="none-decoration dropbtn" onclick="">
+                                                                            <span class="d-flex flex-row justify-content-between align-items-center">
+                                                                                <span>
+                                                                                    List view
+                                                                                </span>
+                                                                            </span>
+                                                                        </a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div> -->
                                                     </li>
                                                     <li class="sub-nav-item">
-                                                        <a href="#" aria-label="Shop page" class="none-decoration dropbtn" onclick="openSubNavShopPage()">
-                                                            <span class="d-flex flex-row justify-content-between align-items-center">
+                                                        <label for="nav-shop-page" class="d-flex flex-row justify-content-between align-items-center">
+                                                            <span>Shop page</span>
+                                                            <i class="fa-solid fa-chevron-right"></i>
+                                                        </label>
+
+                                                        <input type="checkbox" id="nav-shop-page" class="d-none">
+
+                                                        <!-- <div id="sub-nav-shop-page" class="secondary-sub-nav-page all-sub-nav d-flex flex-column">
+                                                            <div class="position-relative" style="color: var(--whrite); font-size: 1.8rem; text-align: center; padding: 1.5rem 3rem; margin: 0; background-color: var(--bg-header);">
+                                                                <a href="#" aria-label="Back" style="border: none; padding: 0;" onclick="goBackSecondary()">
+                                                                    <i class="fa-solid fa-arrow-left position-absolute" style="color: #ffffff; left: 2rem; top: 50%; transform: translateY(-50%);"></i>
+                                                                </a>
                                                                 <span>Shop page</span>
-                                                                <i class="fa-solid fa-chevron-right"></i>
-                                                            </span>
-                                                        </a>
+                                                                <a href="#" aria-label="Close" style="border: none; padding: 0;" onclick="closeNav(), off()">
+                                                                    <i class="fa-solid fa-xmark position-absolute" style="color: #ffffff; right: 2rem; top: 50%; transform: translateY(-50%);"></i>
+                                                                </a>
+                                                            </div>
+                                            
+                                                            <div class="grow-fit" style="width: 32rem; overflow: hidden; position: relative;">
+                                                                <ul id="secondary-sub-shop-page" class="secondary-sub-nav all-sub-nav position-absolute" style="padding-top: 1rem; z-index: 200; width: 100%;">
+                                                                    <li class="sub-nav-item">
+                                                                        <a href="#" aria-label="Go" class="none-decoration dropbtn" onclick="">
+                                                                            <span class="d-flex flex-row justify-content-between align-items-center">
+                                                                                <span>
+                                                                                    Collection list
+                                                                                </span>
+                                                                            </span>
+                                                                        </a>
+                                                                    </li>
+                                                                    <li class="sub-nav-item">
+                                                                        <a href="#" aria-label="Go" class="none-decoration dropbtn" onclick="">
+                                                                            <span class="d-flex flex-row justify-content-between align-items-center">
+                                                                                <span>
+                                                                                    Collection list 2
+                                                                                </span>
+                                                                            </span>
+                                                                        </a>
+                                                                    </li>
+                                                                    <li class="sub-nav-item">
+                                                                        <a href="#" aria-label="Go" class="none-decoration dropbtn" onclick="">
+                                                                            <span class="d-flex flex-row justify-content-between align-items-center">
+                                                                                <span>
+                                                                                    Pagination page
+                                                                                </span>
+                                                                            </span>
+                                                                        </a>
+                                                                    </li>
+                                                                    <li class="sub-nav-item">
+                                                                        <a href="#" aria-label="Go" class="none-decoration dropbtn" onclick="">
+                                                                            <span class="d-flex flex-row justify-content-between align-items-center">
+                                                                                <span>
+                                                                                    Load more button
+                                                                                </span>
+                                                                            </span>
+                                                                        </a>
+                                                                    </li>
+                                                                    <li class="sub-nav-item">
+                                                                        <a href="#" aria-label="Go" class="none-decoration dropbtn" onclick="">
+                                                                            <span class="d-flex flex-row justify-content-between align-items-center">
+                                                                                <span>
+                                                                                    Infinite scrolling
+                                                                                </span>
+                                                                            </span>
+                                                                        </a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div> -->
                                                     </li>
                                                     <li class="sub-nav-item" style="background: var(--whrite);">
                                                         <div>
@@ -1787,35 +1933,244 @@
                                     </li>
     
                                     <li class="nav-item">
-                                        <input type="checkbox" id="nav-product" class="d-none">
                                         <label class="d-flex flex-row justify-content-between align-items-center" for="nav-product">
                                             <span>Product</span>
                                             <i class="fa-solid fa-chevron-right"></i>
                                         </label>      
+                                        <input type="checkbox" id="nav-product" class="d-none">
+                                        <div id="sub-nav-product" class="sub-nav-shop position-absolute d-flex flex-column">
+                                            <div class="position-relative" style="color: var(--whrite); font-size: 1.8rem; text-align: center; padding: 1.5rem 3rem; margin: 0; background-color: var(--bg-header);">
+                                                <label for="nav-product">
+                                                    <i class="fa-solid fa-arrow-left position-absolute" style="color: #ffffff; left: 2rem; top: 50%; transform: translateY(-50%);"></i>
+                                                </label>
+                                                <span>Product</span>
+                                                <label for="toggle">
+                                                    <i class="fa-solid fa-xmark position-absolute" style="color: #ffffff; right: 2rem; top: 50%; transform: translateY(-50%);"></i>
+                                                </label>
+                                            </div>
+
+                                            <div class="grow-fit" style="width: 32rem; overflow: hidden; position: relative;">
+                                                <ul id="sub-product" class="sub-nav position-absolute" style="padding-top: 1rem; z-index: 200; width: 100%;">
+                                                    <li class="sub-nav-item">
+                                                        <label for="nav-product-layout" class="d-flex flex-row justify-content-between align-items-center">
+                                                            <span>Product Layout</span>
+                                                            <i class="fa-solid fa-chevron-right"></i>
+                                                        </label>
+
+                                                        <input type="checkbox" id="nav-shop-layout" class="d-none">
+                                                    </li>
+                                                    <li class="sub-nav-item">
+                                                        <label for="nav-product-feature" class="d-flex flex-row justify-content-between align-items-center">
+                                                            <span>Product Feature</span>
+                                                            <i class="fa-solid fa-chevron-right"></i>
+                                                        </label>
+
+                                                        <input type="checkbox" id="nav-shop-layout" class="d-none">
+                                                    </li>
+                                                    <li class="sub-nav-item">
+                                                        <label for="nav-product-details" class="d-flex flex-row justify-content-between align-items-center">
+                                                            <span>Product Details</span>
+                                                            <i class="fa-solid fa-chevron-right"></i>
+                                                        </label>
+
+                                                        <input type="checkbox" id="nav-shop-layout" class="d-none">
+                                                    </li>
+                                                    <li class="sub-nav-item">
+                                                        <label for="nav-thumbnails-position" class="d-flex flex-row justify-content-between align-items-center">
+                                                            <span>Thumbnails Position</span>
+                                                            <i class="fa-solid fa-chevron-right"></i>
+                                                        </label>
+
+                                                        <input type="checkbox" id="nav-shop-layout" class="d-none">
+                                                    </li>
+                                                    <li class="sub-nav-item">
+                                                        <label for="nav-boot-sale" class="d-flex flex-row justify-content-between align-items-center">
+                                                            <span>Boot Sale</span>
+                                                            <i class="fa-solid fa-chevron-right"></i>
+                                                        </label>
+
+                                                        <input type="checkbox" id="nav-shop-layout" class="d-none">
+                                                    </li>
+                                                    <li class="sub-nav-item">
+                                                        <label for="nav-product-types" class="d-flex flex-row justify-content-between align-items-center">
+                                                            <span>Product Types</span>
+                                                            <i class="fa-solid fa-chevron-right"></i>
+                                                        </label>
+
+                                                        <input type="checkbox" id="nav-shop-layout" class="d-none">
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
                                     </li>
     
                                     <li class="nav-item">
-                                        <input type="checkbox" id="nav-page" class="d-none">
                                         <label class="d-flex flex-row justify-content-between align-items-center" for="nav-page">
                                             <span>Page</span>
                                             <i class="fa-solid fa-chevron-right"></i>
                                         </label>      
+                                        <input type="checkbox" id="nav-page" class="d-none">
+
+                                        <div id="sub-nav-page" class="sub-nav-shop position-absolute d-flex flex-column">
+                                            <div class="position-relative" style="color: var(--whrite); font-size: 1.8rem; text-align: center; padding: 1.5rem 3rem; margin: 0; background-color: var(--bg-header);">
+                                                <label for="nav-page">
+                                                    <i class="fa-solid fa-arrow-left position-absolute" style="color: #ffffff; left: 2rem; top: 50%; transform: translateY(-50%);"></i>
+                                                </label>
+                                                <span>Page</span>
+                                                <label for="toggle">
+                                                    <i class="fa-solid fa-xmark position-absolute" style="color: #ffffff; right: 2rem; top: 50%; transform: translateY(-50%);"></i>
+                                                </label>
+                                            </div>
+
+                                            <div class="grow-fit" style="width: 32rem; overflow: hidden; position: relative;">
+                                                <ul id="sub-page" class="sub-nav position-absolute justify-content-start" style="padding-top: 1rem; z-index: 200; width: 100%;">
+                                                    <li class="sub-nav-item">
+                                                        <a href="" aria-label="About Us">
+                                                            About Us
+                                                        </a>
+                                                    </li>
+                                                    <li class="sub-nav-item">
+                                                        <a href="" aria-label="Our Stores">
+                                                            Our Stores
+                                                        </a>
+                                                    </li>
+                                                    <li class="sub-nav-item">
+                                                        <a href="" aria-label="FAQ's">
+                                                            FAQ's
+                                                        </a>
+                                                    </li>
+                                                    <li class="sub-nav-item">
+                                                        <a href="" aria-label="Brands">
+                                                            Brands
+                                                        </a>
+                                                    </li>
+                                                    <li class="sub-nav-item">
+                                                        <a href="" aria-label="Career">
+                                                            Career
+                                                        </a>
+                                                    </li>
+                                                    <li class="sub-nav-item">
+                                                        <a href="" aria-label="Contact Us">
+                                                            Contact Us
+                                                        </a>
+                                                    </li>
+                                                    <li class="sub-nav-item">
+                                                        <a href="" aria-label="Store location">
+                                                            Store location
+                                                        </a>
+                                                    </li>
+                                                    <li class="sub-nav-item">
+                                                        <a href="" aria-label="Timeline">
+                                                            Timeline
+                                                        </a>
+                                                    </li>
+                                                    <li class="sub-nav-item">
+                                                        <a href="" aria-label="Porfolio">
+                                                            Porfolio
+                                                        </a>
+                                                    </li>
+                                                    <li class="sub-nav-item">
+                                                        <a href="" aria-label="Compare">
+                                                            Compare
+                                                        </a>
+                                                    </li>
+                                                    <li class="sub-nav-item">
+                                                        <a href="" aria-label="My Account">
+                                                            My Account
+                                                        </a>
+                                                    </li>
+                                                    <li class="sub-nav-item">
+                                                        <a href="" aria-label="Page 404">
+                                                            Page 404
+                                                        </a>
+                                                    </li>
+                                                    <li class="sub-nav-item">
+                                                        <a href="" aria-label="Recently Viewed Products">
+                                                            Recently Viewed Products
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        
                                     </li>
     
                                     <li class="nav-item">
-                                        <input type="checkbox" id="nav-blog" class="d-none">
                                         <label class="d-flex flex-row justify-content-between align-items-center" for="nav-blog">
                                             <span>Blog</span>
                                             <i class="fa-solid fa-chevron-right"></i>
-                                        </label>      
+                                        </label>    
+                                        <input type="checkbox" id="nav-blog" class="d-none">
+
+                                        <div id="sub-nav-blog" class="sub-nav-shop position-absolute d-flex flex-column">
+                                            <div class="position-relative" style="color: var(--whrite); font-size: 1.8rem; text-align: center; padding: 1.5rem 3rem; margin: 0; background-color: var(--bg-header);">
+                                                <label for="nav-blog">
+                                                    <i class="fa-solid fa-arrow-left position-absolute" style="color: #ffffff; left: 2rem; top: 50%; transform: translateY(-50%);"></i>
+                                                </label>
+                                                <span>Blog</span>
+                                                <label for="toggle">
+                                                    <i class="fa-solid fa-xmark position-absolute" style="color: #ffffff; right: 2rem; top: 50%; transform: translateY(-50%);"></i>
+                                                </label>
+                                            </div>
+
+                                            <div class="grow-fit" style="width: 32rem; overflow: hidden; position: relative;">
+                                                <ul id="sub-blog" class="sub-nav position-absolute justify-content-start" style="padding-top: 1rem; z-index: 200; width: 100%;">
+                                                    <li class="sub-nav-item">
+                                                        <a href="" aria-label="Grid 2 columns">
+                                                            Grid 2 columns
+                                                        </a>
+                                                    </li>
+                                                    <li class="sub-nav-item">
+                                                        <a href="" aria-label="Grid 3 columns">
+                                                            Grid 3 columns
+                                                        </a>
+                                                    </li>
+                                                    <li class="sub-nav-item">
+                                                        <a href="" aria-label="Grid 4 columns">
+                                                            Grid 4 columns
+                                                        </a>
+                                                    </li>
+                                                    <li class="sub-nav-item">
+                                                        <a href="" aria-label="Post left sidebar">
+                                                            Post left sidebar
+                                                        </a>
+                                                    </li>
+                                                    <li class="sub-nav-item">
+                                                        <a href="" aria-label="Post right sidebar">
+                                                            Post right sidebar
+                                                        </a>
+                                                    </li>
+                                                    <li class="sub-nav-item">
+                                                        <a href="" aria-label="Post list view">
+                                                            Post list view
+                                                        </a>
+                                                    </li>
+                                                    <li class="sub-nav-item">
+                                                        <a href="" aria-label="Single post">
+                                                            Single post
+                                                        </a>
+                                                    </li>
+                                                    <li class="sub-nav-item">
+                                                        <a href="" aria-label="Pagination loadmore">
+                                                            Pagination loadmore
+                                                        </a>
+                                                    </li>
+                                                    <li class="sub-nav-item">
+                                                        <a href="" aria-label="Pagination Infinite scrolling">
+                                                            Pagination Infinite scrolling
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
                                     </li>
     
                                     <li class="nav-item">
-                                        <label>Sale</label>
+                                        <a class="d-flex">Sale</a>
                                     </li>
     
                                     <li class="nav-item">
-                                        <label>Buy Umino!</label>
+                                        <a class="d-flex">Buy Umino!</a>
                                     </li>
                                 </ul>
     

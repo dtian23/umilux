@@ -42,12 +42,41 @@
   transform: translateX(0);
 }
 
-#sub-nav-home {
+#nav-shop-layout:checked + #sub-nav-shop-layout {
+  transform: translateX(0);
+}
+
+#nav-product:checked + #sub-nav-product {
+  transform: translateX(0);
+}
+
+#nav-page:checked + #sub-nav-page {
+  transform: translateX(0);
+}
+
+#nav-blog:checked + #sub-nav-blog {
+  transform: translateX(0);
+}
+
+#sub-nav-home,
+#sub-nav-shop-layout {
   top: -6.7rem;
 }
 
 #sub-nav-shop {
   top: -11.1rem;
+}
+
+#sub-nav-product {
+  top: -15.7rem;
+}
+
+#sub-nav-page {
+  top: -20.15rem;
+}
+
+#sub-nav-blog {
+  top: -24.62rem;
 }
 
 .toggle-close {
@@ -501,7 +530,6 @@ input[type="search"] {
 }
 
 .nav-item {
-  cursor: pointer;
   opacity: 1;
   transform: translateX(-100%);
   transition: all 0.4s ease-out;
@@ -509,6 +537,7 @@ input[type="search"] {
   padding-right: 1rem;
 }
 
+.nav-item a,
 .nav-item > label {
   /* display: block; */
   cursor: pointer;
@@ -533,8 +562,7 @@ input[type="search"] {
   border-bottom: 1px solid #ebebeb;
 }
 
-.nav-item:hover,
-.sub-nav-item:hover {
+.nav-item:hover {
   color: var(--blakc);
   background-color: #ebebeb;
   transition: 0.4s ease-out;
@@ -1122,12 +1150,22 @@ input[type="search"] {
   border-bottom: 1px solid #ebebeb;
 }
 
-/* .nav-item:hover,
+.nav-item:hover {
+  color: var(--blakc);
+  background-color: #ebebeb;
+  transition: 0.4s ease-out;
+}
+
 .sub-nav-item:hover {
+  background-color: #ebebeb;
+  transition: 0.4s ease-out;
+
+  label {
     color: var(--blakc);
-    background-color: #EBEBEB;
-    transition: 0.4s ease-out;
-} */
+    background-color: #ebebeb;
+    transition: all 0.4s ease-out;
+  }
+}
 
 .sub-nav-shop,
 .secondary-sub-nav-shop,
@@ -1157,12 +1195,18 @@ input[type="search"] {
 }
 
 .sub-nav-item {
+  cursor: pointer;
   opacity: 1;
   transform: translateX(0);
   transition: all 0.4s ease-out;
   /* background-color: var(--whrite); */
 }
 
+.sub-nav-item > * {
+  cursor: pointer;
+}
+
+.sub-nav-item label,
 .sub-nav-item a {
   display: block;
   text-decoration: none;
@@ -1180,15 +1224,16 @@ input[type="search"] {
   background-color: var(--whrite);
 }
 
+.sub-nav-item:not(:last-child) label,
 .sub-nav-item:not(:last-child) a {
   border-bottom: 1px solid #ebebeb;
 }
 
-.sub-nav-item a:hover {
+/* .sub-nav-item label:hover {
   color: var(--blakc);
   background-color: #ebebeb;
   transition: all 0.4s ease-out;
-}
+} */
 
 .side-panel-home {
   width: 50%;
