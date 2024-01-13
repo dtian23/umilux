@@ -14,5 +14,6 @@
   },
   "html.format.wrapAttributes": "force-aligned",
   "html.format.wrapLineLength": 80,
-  "prettier.bracketSpacing": false
+  "prettier.bracketSpacing": false,
+  "prettier.printWidth": 100
 }

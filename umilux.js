@@ -1,16 +1,3 @@
-// const header = document.querySelector(".header");
-// const toggleClass = ".is-sticky";
-// const scrollThreshold = 190;
-
-// window.onscroll = () => {
-//     const currentScroll = window.scrollY;
-//     if (currentScroll > scrollThreshold) {
-//         header.classList.add(toggleClass);
-//     } else {
-//         header.classList.remove(toggleClass);
-//     }
-// }
-
 const header = document.getElementById("header");
 
 window.addEventListener("scroll", function () {
@@ -23,9 +10,7 @@ window.addEventListener("scroll", function () {
 
 /*********************************************************************************** */
 
-const tooltipTriggerList = document.querySelectorAll(
-  '[data-bs-toggle="tooltip"]'
-);
+const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
 const tooltipList = [...tooltipTriggerList].map(
   (tooltipTriggerEl) => new bootstrap.Tooltip(tooltipTriggerEl)
 );
@@ -45,41 +30,24 @@ function closeNav() {
   document.getElementById("sub-home").style.transform = "translateX(-100%)";
   document.getElementById("sub-nav-shop").style.transform = "translateX(-100%)";
   document.getElementById("sub-shop").style.transform = "translateX(-100%)";
-  document.getElementById("sub-nav-shop-layout").style.transform =
-    "translateX(-100%)";
-  document.getElementById("secondary-sub-shop-layout").style.transform =
-    "translateX(-100%)";
-  document.getElementById("sub-nav-shop-page").style.transform =
-    "translateX(-100%)";
-  document.getElementById("secondary-sub-shop-page").style.transform =
-    "translateX(-100%)";
-  document.getElementById("sub-nav-product").style.transform =
-    "translateX(-100%)";
+  document.getElementById("sub-nav-shop-layout").style.transform = "translateX(-100%)";
+  document.getElementById("secondary-sub-shop-layout").style.transform = "translateX(-100%)";
+  document.getElementById("sub-nav-shop-page").style.transform = "translateX(-100%)";
+  document.getElementById("secondary-sub-shop-page").style.transform = "translateX(-100%)";
+  document.getElementById("sub-nav-product").style.transform = "translateX(-100%)";
   document.getElementById("sub-product").style.transform = "translateX(-100%)";
-  document.getElementById("sub-nav-product-1").style.transform =
-    "translateX(-100%)";
-  document.getElementById("secondary-sub-product-1").style.transform =
-    "translateX(-100%)";
-  document.getElementById("sub-nav-product-2").style.transform =
-    "translateX(-100%)";
-  document.getElementById("secondary-sub-product-2").style.transform =
-    "translateX(-100%)";
-  document.getElementById("sub-nav-product-3").style.transform =
-    "translateX(-100%)";
-  document.getElementById("secondary-sub-product-3").style.transform =
-    "translateX(-100%)";
-  document.getElementById("sub-nav-product-4").style.transform =
-    "translateX(-100%)";
-  document.getElementById("secondary-sub-product-4").style.transform =
-    "translateX(-100%)";
-  document.getElementById("sub-nav-product-5").style.transform =
-    "translateX(-100%)";
-  document.getElementById("secondary-sub-product-5").style.transform =
-    "translateX(-100%)";
-  document.getElementById("sub-nav-product-6").style.transform =
-    "translateX(-100%)";
-  document.getElementById("secondary-sub-product-6").style.transform =
-    "translateX(-100%)";
+  document.getElementById("sub-nav-product-1").style.transform = "translateX(-100%)";
+  document.getElementById("secondary-sub-product-1").style.transform = "translateX(-100%)";
+  document.getElementById("sub-nav-product-2").style.transform = "translateX(-100%)";
+  document.getElementById("secondary-sub-product-2").style.transform = "translateX(-100%)";
+  document.getElementById("sub-nav-product-3").style.transform = "translateX(-100%)";
+  document.getElementById("secondary-sub-product-3").style.transform = "translateX(-100%)";
+  document.getElementById("sub-nav-product-4").style.transform = "translateX(-100%)";
+  document.getElementById("secondary-sub-product-4").style.transform = "translateX(-100%)";
+  document.getElementById("sub-nav-product-5").style.transform = "translateX(-100%)";
+  document.getElementById("secondary-sub-product-5").style.transform = "translateX(-100%)";
+  document.getElementById("sub-nav-product-6").style.transform = "translateX(-100%)";
+  document.getElementById("secondary-sub-product-6").style.transform = "translateX(-100%)";
   document.getElementById("sub-nav-page").style.transform = "translateX(-100%)";
   document.getElementById("sub-page").style.transform = "translateX(-100%)";
   document.getElementById("sub-nav-blog").style.transform = "translateX(-100%)";
@@ -94,8 +62,6 @@ function openSubNavHome() {
   document.getElementById("sub-home").style.transform = "translateX(0)";
   document.querySelector(".all-sub-nav").style.opacity = "1";
   document.querySelector(".all-sub-nav").style.visibility = "visible";
-  // document.querySelector(".nav-list-wrapper").style.opacity = "1";
-  // document.querySelector(".nav-list-wrapper").style.visibility = "visible";
 }
 
 function openSubNavShop() {
@@ -104,26 +70,20 @@ function openSubNavShop() {
   document.getElementById("sub-shop").style.transform = "translateX(0)";
   document.querySelector(".all-sub-nav").style.opacity = "1";
   document.querySelector(".all-sub-nav").style.visibility = "visible";
-  // var className = document.getElementsByClassName('register-shop');
-  // className[0].style.transform = "translateX(0)";
 }
 
 function openSubNavShopLayout() {
-  document.getElementById("sub-nav-shop-layout").style.transform =
-    "translateX(0)";
+  document.getElementById("sub-nav-shop-layout").style.transform = "translateX(0)";
   document.getElementById("sub-nav-shop-layout").style.display = "fixed";
-  document.getElementById("secondary-sub-shop-layout").style.transform =
-    "translateX(0)";
+  document.getElementById("secondary-sub-shop-layout").style.transform = "translateX(0)";
   document.querySelector(".all-sub-nav").style.opacity = "1";
   document.querySelector(".all-sub-nav").style.visibility = "visible";
 }
 
 function openSubNavShopPage() {
-  document.getElementById("sub-nav-shop-page").style.transform =
-    "translateX(0)";
+  document.getElementById("sub-nav-shop-page").style.transform = "translateX(0)";
   document.getElementById("sub-nav-shop-page").style.display = "fixed";
-  document.getElementById("secondary-sub-shop-page").style.transform =
-    "translateX(0)";
+  document.getElementById("secondary-sub-shop-page").style.transform = "translateX(0)";
   document.querySelector(".all-sub-nav").style.opacity = "1";
   document.querySelector(".all-sub-nav").style.visibility = "visible";
 }
@@ -138,61 +98,49 @@ function openSubNavProduct() {
 }
 
 function openSecondarySubNavProduct1() {
-  document.getElementById("sub-nav-product-1").style.transform =
-    "translateX(0)";
+  document.getElementById("sub-nav-product-1").style.transform = "translateX(0)";
   document.getElementById("sub-nav-product-1").style.display = "fixed";
-  document.getElementById("secondary-sub-product-1").style.transform =
-    "translateX(0)";
+  document.getElementById("secondary-sub-product-1").style.transform = "translateX(0)";
   document.querySelector(".all-sub-nav").style.opacity = "1";
   document.querySelector(".all-sub-nav").style.visibility = "visible";
 }
 
 function openSecondarySubNavProduct2() {
-  document.getElementById("sub-nav-product-2").style.transform =
-    "translateX(0)";
+  document.getElementById("sub-nav-product-2").style.transform = "translateX(0)";
   document.getElementById("sub-nav-product-2").style.display = "fixed";
-  document.getElementById("secondary-sub-product-2").style.transform =
-    "translateX(0)";
+  document.getElementById("secondary-sub-product-2").style.transform = "translateX(0)";
   document.querySelector(".all-sub-nav").style.opacity = "1";
   document.querySelector(".all-sub-nav").style.visibility = "visible";
 }
 
 function openSecondarySubNavProduct3() {
-  document.getElementById("sub-nav-product-3").style.transform =
-    "translateX(0)";
+  document.getElementById("sub-nav-product-3").style.transform = "translateX(0)";
   document.getElementById("sub-nav-product-3").style.display = "fixed";
-  document.getElementById("secondary-sub-product-3").style.transform =
-    "translateX(0)";
+  document.getElementById("secondary-sub-product-3").style.transform = "translateX(0)";
   document.querySelector(".all-sub-nav").style.opacity = "1";
   document.querySelector(".all-sub-nav").style.visibility = "visible";
 }
 
 function openSecondarySubNavProduct4() {
-  document.getElementById("sub-nav-product-4").style.transform =
-    "translateX(0)";
+  document.getElementById("sub-nav-product-4").style.transform = "translateX(0)";
   document.getElementById("sub-nav-product-4").style.display = "fixed";
-  document.getElementById("secondary-sub-product-4").style.transform =
-    "translateX(0)";
+  document.getElementById("secondary-sub-product-4").style.transform = "translateX(0)";
   document.querySelector(".all-sub-nav").style.opacity = "1";
   document.querySelector(".all-sub-nav").style.visibility = "visible";
 }
 
 function openSecondarySubNavProduct5() {
-  document.getElementById("sub-nav-product-5").style.transform =
-    "translateX(0)";
+  document.getElementById("sub-nav-product-5").style.transform = "translateX(0)";
   document.getElementById("sub-nav-product-5").style.display = "fixed";
-  document.getElementById("secondary-sub-product-5").style.transform =
-    "translateX(0)";
+  document.getElementById("secondary-sub-product-5").style.transform = "translateX(0)";
   document.querySelector(".all-sub-nav").style.opacity = "1";
   document.querySelector(".all-sub-nav").style.visibility = "visible";
 }
 
 function openSecondarySubNavProduct6() {
-  document.getElementById("sub-nav-product-6").style.transform =
-    "translateX(0)";
+  document.getElementById("sub-nav-product-6").style.transform = "translateX(0)";
   document.getElementById("sub-nav-product-6").style.display = "fixed";
-  document.getElementById("secondary-sub-product-6").style.transform =
-    "translateX(0)";
+  document.getElementById("secondary-sub-product-6").style.transform = "translateX(0)";
   document.querySelector(".all-sub-nav").style.opacity = "1";
   document.querySelector(".all-sub-nav").style.visibility = "visible";
 }
@@ -234,8 +182,7 @@ function goBack() {
   document.getElementById("sub-home").style.transform = "translateX(-100%)";
   document.getElementById("sub-nav-shop").style.transform = "translateX(-100%)";
   document.getElementById("sub-shop").style.transform = "translateX(-100%)";
-  document.getElementById("sub-nav-product").style.transform =
-    "translateX(-100%)";
+  document.getElementById("sub-nav-product").style.transform = "translateX(-100%)";
   document.getElementById("sub-product").style.transform = "translateX(-100%)";
   document.getElementById("sub-nav-page").style.transform = "translateX(-100%)";
   document.getElementById("sub-page").style.transform = "translateX(-100%)";
@@ -244,58 +191,28 @@ function goBack() {
 }
 
 function goBackSecondary() {
-  document.getElementById("sub-nav-shop-layout").style.transform =
-    "translateX(-100%)";
-  document.getElementById("secondary-sub-shop-layout").style.transform =
-    "translateX(-100%)";
-
-  document.getElementById("sub-nav-shop-page").style.transform =
-    "translateX(-100%)";
-  document.getElementById("secondary-sub-shop-page").style.transform =
-    "translateX(-100%)";
-  document.getElementById("sub-nav-product-1").style.transform =
-    "translateX(-100%)";
-  document.getElementById("secondary-sub-product-1").style.transform =
-    "translateX(-100%)";
-  document.getElementById("sub-nav-product-2").style.transform =
-    "translateX(-100%)";
-  document.getElementById("secondary-sub-product-2").style.transform =
-    "translateX(-100%)";
-  document.getElementById("sub-nav-product-3").style.transform =
-    "translateX(-100%)";
-  document.getElementById("secondary-sub-product-3").style.transform =
-    "translateX(-100%)";
-  document.getElementById("sub-nav-product-4").style.transform =
-    "translateX(-100%)";
-  document.getElementById("secondary-sub-product-4").style.transform =
-    "translateX(-100%)";
-  document.getElementById("sub-nav-product-5").style.transform =
-    "translateX(-100%)";
-  document.getElementById("secondary-sub-product-5").style.transform =
-    "translateX(-100%)";
-  document.getElementById("sub-nav-product-6").style.transform =
-    "translateX(-100%)";
-  document.getElementById("secondary-sub-product-6").style.transform =
-    "translateX(-100%)";
+  document.getElementById("sub-nav-shop-layout").style.transform = "translateX(-100%)";
+  document.getElementById("secondary-sub-shop-layout").style.transform = "translateX(-100%)";
+  document.getElementById("sub-nav-shop-page").style.transform = "translateX(-100%)";
+  document.getElementById("secondary-sub-shop-page").style.transform = "translateX(-100%)";
+  document.getElementById("sub-nav-product-1").style.transform = "translateX(-100%)";
+  document.getElementById("secondary-sub-product-1").style.transform = "translateX(-100%)";
+  document.getElementById("sub-nav-product-2").style.transform = "translateX(-100%)";
+  document.getElementById("secondary-sub-product-2").style.transform = "translateX(-100%)";
+  document.getElementById("sub-nav-product-3").style.transform = "translateX(-100%)";
+  document.getElementById("secondary-sub-product-3").style.transform = "translateX(-100%)";
+  document.getElementById("sub-nav-product-4").style.transform = "translateX(-100%)";
+  document.getElementById("secondary-sub-product-4").style.transform = "translateX(-100%)";
+  document.getElementById("sub-nav-product-5").style.transform = "translateX(-100%)";
+  document.getElementById("secondary-sub-product-5").style.transform = "translateX(-100%)";
+  document.getElementById("sub-nav-product-6").style.transform = "translateX(-100%)";
+  document.getElementById("secondary-sub-product-6").style.transform = "translateX(-100%)";
 }
-
-function setGray() {
-  // document.getElementById("overLay").style.zIndex = "99";
-}
-
-// function setGraySearch() {
-//     document.getElementById("overLay-screen").style.zIndex = "99";
-// }
 
 function on() {
-  // document.getElementById('overLay').style.display = "block";
   document.getElementById("menuOverlay").style.visibility = "visible";
   document.getElementById("menuOverlay").style.opacity = "1";
 }
-
-// function onSearch() {
-//     document.getElementById("overLay-screen").style.display = "block";
-// }
 
 function off() {
   document.getElementById("menuOverlay").style.visibility = "hidden";
@@ -344,54 +261,21 @@ setInterval(updateCountdown, 1000);
 
 /*********************************************************** */
 
-// function closeComponent() {
-//   component.style.visibility = "hidden";
-//   component.style.opacity = "0";
-//   background.style.visibility = "hidden";
-//   background.style.opacity = "0";
-// }
-
-// function openComponent() {
-//   background.style.visibility = "visible";
-//   background.style.opacity = "1";
-// }
 const searchInput = document.querySelector(".search-input");
 
 searchInput.addEventListener("click", function () {
-  if (
-    (background1.style.visibility === "hidden") &
-    (background1.style.opacity === "0")
-  ) {
+  if ((background1.style.visibility === "hidden") & (background1.style.opacity === "0")) {
     background1.style.visibility = "visible";
     background1.style.opacity = "1";
   }
 });
 
-// function addOutsideClickListener(parent, component, closeComponent) {
-//   document.addEventListener("click", function (event) {
-//     const isClickInsideComponent =
-//       parent.contains(event.target) || event.target === parent;
-
-//     if (component.style.visibility === "visible" && !isClickInsideComponent) {
-//       closeComponent();
-//     }
-//   });
-// }
-
-function addOutsideClickListener(
-  parent,
-  component,
-  background,
-  closeComponent,
-  slideCloseComponent
-) {
+function addOutsideClickListener(parent, component, background, closeComponent) {
   document.addEventListener("click", function (event) {
-    const isClickInsideComponent =
-      parent.contains(event.target) || event.target === parent;
+    const isClickInsideComponent = parent.contains(event.target) || event.target === parent;
 
     const computedStyles = getComputedStyle(component);
     const visibility = computedStyles.getPropertyValue("visibility");
-    const transform = computedStyles.getPropertyValue("transform");
 
     if (visibility === "visible" && !isClickInsideComponent) {
       closeComponent(component, background);
@@ -422,45 +306,27 @@ const sidePanel = document.getElementById("side-panel");
 const menuOverlay = document.getElementById("menuOverlay");
 const navItems = document.querySelectorAll(".nav-item");
 
-toggle.addEventListener("change", function () {
-  if (toggle.checked) {
-    openSidePanel();
-    slideNavItems("translateX(0)");
-  } else {
-    closeSidePanel();
-    slideNavItems("translateX(-100%)");
-  }
-});
-
 menuOverlay.addEventListener("click", function (event) {
+  console.log(toggle.checked);
   if (event.target === menuOverlay) {
-    closeSidePanel();
+    sidePanel.style.transform = "translateX(-100%)";
+    menuOverlay.style.opacity = "0";
+    menuOverlay.style.visibility = "hidden";
     toggle.checked = false;
-    slideNavItems("translateX(-100%)");
   }
 });
 
-function openSidePanel() {
-  sidePanel.style.transform = "translateX(0)";
-  menuOverlay.style.display = "block";
-  setTimeout(function () {
+toggle.addEventListener("click", function () {
+  if (toggle.checked) {
+    sidePanel.style.transform = "translateX(0)";
     menuOverlay.style.opacity = "1";
-  }, 10);
-}
-
-function closeSidePanel() {
-  sidePanel.style.transform = "translateX(-100%)";
-  menuOverlay.style.opacity = "0";
-  setTimeout(function () {
-    menuOverlay.style.display = "none";
-  }, 300);
-}
-
-function slideNavItems(transformValue) {
-  navItems.forEach(function (navItem) {
-    navItem.style.transform = transformValue;
-  });
-}
+    menuOverlay.style.visibility = "visible";
+  } else {
+    sidePanel.style.transform = "translateX(-100%)";
+    menuOverlay.style.opacity = "0";
+    menuOverlay.style.visibility = "hidden";
+  }
+});
 
 /***************************************************************************** */
 
@@ -469,10 +335,7 @@ const overlay = document.getElementById("overLay");
 const dropdownElement = document.getElementById("vertical-dropdown-component");
 
 overlayButton.addEventListener("click", function () {
-  if (
-    (overlay.style.visibility === "visible") &
-    (overlay.style.opacity === "1")
-  ) {
+  if ((overlay.style.visibility === "visible") & (overlay.style.opacity === "1")) {
     overlay.style.visibility = "hidden";
     overlay.style.opacity = "0";
   } else {
@@ -487,8 +350,7 @@ function hideOverlay() {
 }
 
 document.addEventListener("click", function (event) {
-  const isClickInside =
-    dropdownElement.contains(event.target) || event.target === dropdownElement;
+  const isClickInside = dropdownElement.contains(event.target) || event.target === dropdownElement;
 
   if ((overlay.style.visibility === "visible") & !isClickInside) {
     hideOverlay();
@@ -496,19 +358,6 @@ document.addEventListener("click", function (event) {
 });
 
 /********************************************************************** */
-
-// const loadMore = document.getElementById('loadMore');
-// const loadMorefirst = document.querySelectorAll('.load-more-first');
-// const loadMoresecond = document.querySelectorAll('.load-more-second');
-
-// loadMore.addEventListener('click', function () {
-//     if (loadMorefirst.style.display === 'none') {
-//         loadMorefirst.style.display = 'flex';
-//     }
-//     if (loadMorefirst.style.display === 'flex' & loadMoresecond.style.display === 'none') {
-//         loadMoresecond.style.display = 'flex';
-//     }
-// });
 
 const showMoreButton = document.getElementById("loadMore");
 const loadMoreFirstElements = document.querySelectorAll(".load-more-first");
@@ -546,28 +395,6 @@ function isAnySecondVisible() {
 
 /*************************************************************************** */
 
-// const addToWishList = document.querySelectorAll('.to-wish-list');
-// const isSelected = "selected";
-
-// addToWishList.forEach(function (element) {
-//     element.addEventListener('click', function () {
-//         var computedStyle = window.getComputedStyle(element);
-//         var backgroundColor = computedStyle.getPropertyValue('background-color');
-//         console.log(backgroundColor);
-//         if (backgroundColor === 'rgb(241, 243, 247)') {
-//             element.classList.add("wish-selected");
-//             element.classList.remove("wish-select");
-//             console.log("ahahaha");
-//             element.style.background = 'rgb(0, 162, 194)';
-//         } else {
-//             element.classList.remove("wish-selected");
-//             element.classList.add("wish-select");
-//             console.log("hihihi");
-//             element.style.background = 'rgb(241, 243, 247)';
-//         }
-//     });
-// });
-
 function toggleWishListClassOnClick(elements) {
   elements.forEach(function (element) {
     element.addEventListener("click", function () {
@@ -576,7 +403,6 @@ function toggleWishListClassOnClick(elements) {
   });
 }
 
-// Usage example:
 const wishListElements = document.querySelectorAll(".to-wish-list");
 
 toggleWishListClassOnClick(wishListElements);
